@@ -14,9 +14,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaFXApplication" />
-        <option value="Yml File" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
+        <option value="Yml File" />
       </list>
     </option>
   </component>
@@ -45,7 +45,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/changgou_parent/changgou_web/changgou-web-search/src/main/resources/static" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.39885056" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.ignored.files" />
@@ -80,7 +80,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SearchApplication">
+  <component name="RunManager" selected="Spring Boot.SearchWebApplication">
     <configuration name="test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.test.test" />
       <module name="test1" />
@@ -165,19 +165,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GoodsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="changgou-service-goods" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.changgou.goods.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.changgou.goods.GoodsApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="changgou-service-search" />
       <extension name="coverage">
@@ -187,6 +174,19 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.changgou.search.SearchApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="changgou-web-search" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.changgou.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.changgou.search.SearchWebApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -231,15 +231,15 @@
       <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Spring Boot.EurekaApplication" />
       <item itemvalue="Spring Boot.SearchApplication" />
-      <item itemvalue="Spring Boot.GoodsApplication" />
+      <item itemvalue="Spring Boot.SearchWebApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.SearchApplication" />
+        <item itemvalue="Spring Boot.SearchWebApplication" />
         <item itemvalue="Spring Boot.EurekaApplication" />
+        <item itemvalue="Spring Boot.SearchApplication" />
         <item itemvalue="Application.test (1)" />
         <item itemvalue="Application.test" />
-        <item itemvalue="Spring Boot.GoodsApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -307,7 +307,7 @@
       <workItem from="1625650579537" duration="966000" />
       <workItem from="1625651578921" duration="2697000" />
       <workItem from="1625725053889" duration="16697000" />
-      <workItem from="1625902610515" duration="1879000" />
+      <workItem from="1625902610515" duration="8822000" />
     </task>
     <servers />
   </component>
@@ -319,11 +319,11 @@
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
     <state x="1910" y="0" key="#Auto_Import/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1623239351500" />
-    <state x="1640" y="4" key="#Project_Structure" timestamp="1625904440635">
+    <state x="1640" y="4" key="#Project_Structure" timestamp="1625906583532">
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
     <state x="200" y="4" key="#Project_Structure/1440.0.1440.860/0.0.1440.860@0.0.1440.860" timestamp="1621649324629" />
-    <state x="1640" y="4" key="#Project_Structure/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1625904440635" />
+    <state x="1640" y="4" key="#Project_Structure/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1625906583532" />
     <state x="1788" y="100" width="1092" height="716" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1623334933083">
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
@@ -356,46 +356,46 @@
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
     <state x="1871" y="226" key="FileChooserDialogImpl/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1625725848290" />
-    <state width="881" height="305" key="GridCell.Tab.0.bottom" timestamp="1625744846444">
+    <state width="880" height="68" key="GridCell.Tab.0.bottom" timestamp="1625907911239">
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
     <state width="882" height="389" key="GridCell.Tab.0.bottom/1440.0.1440.860/0.0.1440.860@0.0.1440.860" timestamp="1625134291817" />
-    <state width="881" height="305" key="GridCell.Tab.0.bottom/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1625744846444" />
-    <state width="881" height="305" key="GridCell.Tab.0.center" timestamp="1625744846444">
+    <state width="880" height="68" key="GridCell.Tab.0.bottom/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1625907911239" />
+    <state width="880" height="68" key="GridCell.Tab.0.center" timestamp="1625907911239">
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
     <state width="882" height="389" key="GridCell.Tab.0.center/1440.0.1440.860/0.0.1440.860@0.0.1440.860" timestamp="1625134291817" />
-    <state width="881" height="305" key="GridCell.Tab.0.center/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1625744846444" />
-    <state width="881" height="305" key="GridCell.Tab.0.left" timestamp="1625744846444">
+    <state width="880" height="68" key="GridCell.Tab.0.center/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1625907911239" />
+    <state width="880" height="68" key="GridCell.Tab.0.left" timestamp="1625907911239">
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
     <state width="882" height="389" key="GridCell.Tab.0.left/1440.0.1440.860/0.0.1440.860@0.0.1440.860" timestamp="1625134291817" />
-    <state width="881" height="305" key="GridCell.Tab.0.left/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1625744846444" />
-    <state width="881" height="305" key="GridCell.Tab.0.right" timestamp="1625744846444">
+    <state width="880" height="68" key="GridCell.Tab.0.left/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1625907911239" />
+    <state width="880" height="68" key="GridCell.Tab.0.right" timestamp="1625907911239">
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
     <state width="882" height="389" key="GridCell.Tab.0.right/1440.0.1440.860/0.0.1440.860@0.0.1440.860" timestamp="1625134291817" />
-    <state width="881" height="305" key="GridCell.Tab.0.right/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1625744846444" />
-    <state width="881" height="305" key="GridCell.Tab.1.bottom" timestamp="1625744846444">
+    <state width="880" height="68" key="GridCell.Tab.0.right/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1625907911239" />
+    <state width="880" height="68" key="GridCell.Tab.1.bottom" timestamp="1625907911239">
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
     <state width="882" height="389" key="GridCell.Tab.1.bottom/1440.0.1440.860/0.0.1440.860@0.0.1440.860" timestamp="1625134291817" />
-    <state width="881" height="305" key="GridCell.Tab.1.bottom/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1625744846444" />
-    <state width="881" height="305" key="GridCell.Tab.1.center" timestamp="1625744846444">
+    <state width="880" height="68" key="GridCell.Tab.1.bottom/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1625907911239" />
+    <state width="880" height="68" key="GridCell.Tab.1.center" timestamp="1625907911239">
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
     <state width="882" height="389" key="GridCell.Tab.1.center/1440.0.1440.860/0.0.1440.860@0.0.1440.860" timestamp="1625134291817" />
-    <state width="881" height="305" key="GridCell.Tab.1.center/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1625744846444" />
-    <state width="881" height="305" key="GridCell.Tab.1.left" timestamp="1625744846444">
+    <state width="880" height="68" key="GridCell.Tab.1.center/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1625907911239" />
+    <state width="880" height="68" key="GridCell.Tab.1.left" timestamp="1625907911239">
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
     <state width="882" height="389" key="GridCell.Tab.1.left/1440.0.1440.860/0.0.1440.860@0.0.1440.860" timestamp="1625134291817" />
-    <state width="881" height="305" key="GridCell.Tab.1.left/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1625744846444" />
-    <state width="881" height="305" key="GridCell.Tab.1.right" timestamp="1625744846444">
+    <state width="880" height="68" key="GridCell.Tab.1.left/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1625907911239" />
+    <state width="880" height="68" key="GridCell.Tab.1.right" timestamp="1625907911239">
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
     <state width="882" height="389" key="GridCell.Tab.1.right/1440.0.1440.860/0.0.1440.860@0.0.1440.860" timestamp="1625134291817" />
-    <state width="881" height="305" key="GridCell.Tab.1.right/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1625744846444" />
+    <state width="880" height="68" key="GridCell.Tab.1.right/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1625907911239" />
     <state width="882" height="281" key="GridCell.Tab.2.bottom" timestamp="1625737364988">
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
