@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="changgou-service-canal-1.0-SNAPSHOT (2)">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-canal/target/changgou-service-canal-1.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

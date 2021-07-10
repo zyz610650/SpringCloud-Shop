@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../SpringCloudDemo/SpringCloudDemo.iml" filepath="$PROJECT_DIR$/../SpringCloudDemo/SpringCloudDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-canal/changgou-service-canal.iml" filepath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-canal/changgou-service-canal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-content/changgou-service-content.iml" filepath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-content/changgou-service-content.iml" />
+      <module fileurl="file://$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-content-api/changgou-service-content-api.iml" filepath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-content-api/changgou-service-content-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-goods/changgou-service-goods.iml" filepath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-goods/changgou-service-goods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-search/changgou-service-search.iml" filepath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-search/changgou-service-search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-search-api/changgou-service-search-api.iml" filepath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-search-api/changgou-service-search-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/changgou_parent/changgou_web/changgou-web-search/changgou-web-search.iml" filepath="$PROJECT_DIR$/changgou_parent/changgou_web/changgou-web-search/changgou-web-search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/changgou_parent/changgou_common/changgou_common.iml" filepath="$PROJECT_DIR$/changgou_parent/changgou_common/changgou_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/changgou_parent/changgou_common_db/changgou_common_db.iml" filepath="$PROJECT_DIR$/changgou_parent/changgou_common_db/changgou_common_db.iml" />
+      <module fileurl="file://$PROJECT_DIR$/changgou_parent/changgou_eureka/changgou_eureka.iml" filepath="$PROJECT_DIR$/changgou_parent/changgou_eureka/changgou_eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/changgou_parent/changgou_gateway/changgou_gateway.iml" filepath="$PROJECT_DIR$/changgou_parent/changgou_gateway/changgou_gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/changgou_parent/changgou_parent.iml" filepath="$PROJECT_DIR$/changgou_parent/changgou_parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/changgou_parent/changgou_service/changgou_service.iml" filepath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou_service_api.iml" filepath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou_service_api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/changgou_parent/changgou_service/changgou_service_file/changgou_service_file.iml" filepath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_service_file/changgou_service_file.iml" />
+      <module fileurl="file://$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou_service_goods_api/changgou_service_goods_api.iml" filepath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou_service_goods_api/changgou_service_goods_api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/changgou_parent/changgou_web/changgou_web.iml" filepath="$PROJECT_DIR$/changgou_parent/changgou_web/changgou_web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SpringCloudDemo/consumer-demo/consumer-demo.iml" filepath="$PROJECT_DIR$/../SpringCloudDemo/consumer-demo/consumer-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SpringCloudDemo/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/../SpringCloudDemo/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SpringCloudDemo/gateway/gateway.iml" filepath="$PROJECT_DIR$/../SpringCloudDemo/gateway/gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/springCloud_Shop.iml" filepath="$PROJECT_DIR$/.idea/springCloud_Shop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../test.iml" filepath="$PROJECT_DIR$/../test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../test1/test1.iml" filepath="$PROJECT_DIR$/../test1/test1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SpringCloudDemo/user-service/user-service.iml" filepath="$PROJECT_DIR$/../SpringCloudDemo/user-service/user-service.iml" />
+    </modules>
+  </component>
+</project>
