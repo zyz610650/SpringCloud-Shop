@@ -120,7 +120,8 @@ public class SkuServiceImpl implements SkuService {
 
         //d.分页
           Integer pageNum=1;
-          Integer pageSize=3;
+          Integer pageSize=30;
+
           if (!StringUtils.isEmpty(searchMap.get("pageNum")))
           {
               try {
@@ -176,6 +177,9 @@ public class SkuServiceImpl implements SkuService {
 
         Map resultMap=new HashMap();
 
+        //在后端设置前端每页显示多少数据
+        resultMap.put("pageNum", pageNum);
+        resultMap.put("pageSize", pageSize);
         resultMap.put("categoryList",categoryList);
         resultMap.put("brandList",brandList);
         resultMap.put("specList",specList);

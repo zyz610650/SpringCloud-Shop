@@ -166,9 +166,11 @@ public class SkuInfo implements Serializable {
     private String status;
 
     //创建时间
+    @Field(type = FieldType.Date)
     private Date createTime;
 
     //更新时间
+    @Field(type = FieldType.Date)
     private Date updateTime;
 
     //是否默认

@@ -21,7 +21,8 @@ public class Page <T> implements Serializable{
 
 	// 最后一页
 	private int last;
-	
+
+	//这两个就是 当前页 左边显示哪几页  右边显示哪几页
 	private int lpage;
 	
 	private int rpage;
