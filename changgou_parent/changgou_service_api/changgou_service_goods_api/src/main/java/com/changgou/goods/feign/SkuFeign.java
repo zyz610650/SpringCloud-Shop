@@ -1,11 +1,12 @@
 package com.changgou.goods.feign;
 
+import com.changgou.entity.CacheKey;
 import com.changgou.entity.Result;
+import com.changgou.goods.pojo.Category;
 import com.changgou.goods.pojo.Sku;
+import com.changgou.goods.pojo.Spu;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -27,4 +28,17 @@ public interface SkuFeign {
      */
     @GetMapping("/status/{status}")
     Result<List<Sku>>  findByStatus(@PathVariable String status);
+
+
+
+    /**
+     * 根据条件查询sku信息
+     * @param sku
+     * @return
+     */
+    @PostMapping("/search")
+    Result<List<Sku>> findList(@RequestBody(required = false) Sku sku);
+
+
+
 }

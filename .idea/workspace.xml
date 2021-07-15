@@ -5,66 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="688e3756-3b0f-4c66-ac93-754b9f19a92b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/changgou_parent/changgou_web/changgou-web-item/changgou-web-item.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_common/src/main/java/com/changgou/entity/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_common/src/main/java/com/changgou/entity/Page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_common/target/changgou-common-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_common/target/classes/com/changgou/entity/Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_common/target/classes/com/changgou/entity/Page.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_common/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_common_db/target/changgou-common-db-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_common_db/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_common_db/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_eureka/target/changgou-eureka-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_eureka/target/changgou-eureka-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_eureka/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_eureka/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-canal/target/changgou-service-canal-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-canal/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-canal/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-canal/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-canal/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-canal/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-canal/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-content/target/changgou-service-content-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-content/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-content/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-content/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-content/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-content/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-content/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-goods/target/changgou-service-goods-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-goods/target/changgou-service-goods-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-goods/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-goods/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-goods/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-goods/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-search/src/main/java/com/changgou/search/service/impl/SkuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-search/src/main/java/com/changgou/search/service/impl/SkuServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-search/target/changgou-service-search-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-search/target/changgou-service-search-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-search/target/classes/com/changgou/search/controller/SkuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-search/target/classes/com/changgou/search/controller/SkuController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-search/target/classes/com/changgou/search/service/SearchResultMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-search/target/classes/com/changgou/search/service/SearchResultMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-search/target/classes/com/changgou/search/service/impl/SkuServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-search/target/classes/com/changgou/search/service/impl/SkuServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-search/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-search/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-search/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-search/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-search/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-search/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-search/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-search/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_service_file/target/changgou_service_file-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_service_file/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_service_file/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_service_file/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_service_file/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_service_file/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_service_file/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-content-api/target/changgou-service-content-api-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-content-api/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-content-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-content-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-content-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-content-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-content-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-search-api/src/main/java/com/changgou/search/feign/SkuFeign.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-search-api/src/main/java/com/changgou/search/feign/SkuFeign.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-search-api/src/main/java/com/changgou/search/pojo/SkuInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-search-api/src/main/java/com/changgou/search/pojo/SkuInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-search-api/target/changgou-service-search-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-search-api/target/changgou-service-search-api-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-search-api/target/classes/com/changgou/search/feign/SkuFeign.class" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-search-api/target/classes/com/changgou/search/feign/SkuFeign.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-search-api/target/classes/com/changgou/search/pojo/SkuInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-search-api/target/classes/com/changgou/search/pojo/SkuInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou_service_goods_api/target/changgou_service_goods_api-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou_service_goods_api/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou_service_goods_api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou_service_goods_api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou_service_goods_api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou_service_goods_api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou_service_goods_api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_web/changgou-web-search/src/main/java/com/changgou/search/controller/SkuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_web/changgou-web-search/src/main/java/com/changgou/search/controller/SkuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_web/changgou-web-search/src/main/resources/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_web/changgou-web-search/src/main/resources/templates/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_web/changgou-web-search/target/changgou-web-search-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_web/changgou-web-search/target/changgou-web-search-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_web/changgou-web-search/target/classes/com/changgou/search/controller/SkuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_web/changgou-web-search/target/classes/com/changgou/search/controller/SkuController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_web/changgou-web-search/target/classes/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_web/changgou-web-search/target/classes/templates/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou_service_goods_api/src/main/java/com/changgou/goods/feign/SkuFeign.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou_service_goods_api/src/main/java/com/changgou/goods/feign/SkuFeign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_web/changgou-web-search/changgou-web-search.iml" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_web/changgou-web-search/changgou-web-search.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_web/changgou-web-search/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_web/changgou-web-search/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_web/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,9 +24,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaFXApplication" />
-        <option value="Interface" />
-        <option value="Class" />
         <option value="Yml File" />
+        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -95,6 +44,9 @@
     <option name="delegateBuildToMaven" value="true" />
   </component>
   <component name="ProjectId" id="1rpecDSeP1NCsJcmWsNjilvE9qI" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -105,10 +57,11 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/changgou_parent/changgou_web/changgou-web-search/src/main/resources/static" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/changgou_parent/changgou_web/changgou-web-item/src/main/resources/templates/items" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.39885056" />
@@ -118,23 +71,23 @@
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Java_project\springCloud_Shop\changgou_parent\changgou_web\changgou-web-search\src\main\resources\static" />
-      <recent name="E:\Java_project\springCloud_Shop\changgou_parent\changgou_service\changgou-service-search\src\main\java\com\changgou" />
-      <recent name="E:\Java_project\springCloud_Shop\changgou_parent\changgou_service\changgou-service-search\src\main\resources" />
-      <recent name="E:\Java_project\springCloud_Shop\changgou_parent\changgou_service\changgou-service-search\src\main\java\com\changgou\search" />
-      <recent name="E:\Java_project\springCloud_Shop\changgou_parent\changgou_service\changgou-service-content\src\main\java" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.changgou.goods" />
-      <recent name="com.changgou.goods.controller" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Java_project\springCloud_Shop\changgou_parent\changgou_web\changgou-web-search\src\main\resources\templates" />
       <recent name="E:\Java_project\springCloud_Shop\changgou_parent\changgou_service\changgou-service-search\src\main\java\com\changgou\search" />
       <recent name="E:\Java_project\springCloud_Shop\changgou_parent\changgou_service\changgou-service-search\src\main\java\com\changgou\search\controller" />
       <recent name="E:\Java_project\springCloud_Shop\changgou_parent\changgou_service\changgou-service-search\src\main\java\com\changgou\search\dao" />
       <recent name="E:\Java_project\springCloud_Shop\changgou_parent\changgou_service\changgou-service-search\src\main\java\com\changgou\search\service" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.changgou.goods" />
+      <recent name="com.changgou.goods.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Java_project\springCloud_Shop\changgou_parent\changgou_web\changgou-web-item\src\main\resources\templates\items" />
+      <recent name="E:\Java_project\springCloud_Shop\changgou_parent\changgou_web\changgou-web-item\src\main\resources" />
+      <recent name="E:\Java_project\springCloud_Shop\changgou_parent\changgou_web\changgou-web-item\src\main\java\com\changgou\item" />
+      <recent name="E:\Java_project\springCloud_Shop\changgou_parent\changgou_web\changgou-web-search\src\main\resources\static" />
+      <recent name="E:\Java_project\springCloud_Shop\changgou_parent\changgou_service\changgou-service-search\src\main\java\com\changgou" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -145,19 +98,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.SearchWebApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="search.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/code-template/changgou-web-search/target/classes/templates/search.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -275,6 +215,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JavaScript Debug.search.html" />
       <item itemvalue="Spring Boot.EurekaServerApplication10087" />
       <item itemvalue="Spring Boot.EurekaServerApplication10088" />
       <item itemvalue="Spring Boot.UserApplication9092" />
@@ -285,7 +226,6 @@
       <item itemvalue="Spring Boot.SearchApplication" />
       <item itemvalue="Spring Boot.SearchWebApplication" />
       <item itemvalue="Spring Boot.GoodsApplication" />
-      <item itemvalue="JavaScript Debug.search.html" />
     </list>
     <recent_temporary>
       <list>
@@ -365,6 +305,8 @@
       <workItem from="1625918282018" duration="14000" />
       <workItem from="1626178408898" duration="4619000" />
       <workItem from="1626232272758" duration="11758000" />
+      <workItem from="1626308875513" duration="9026000" />
+      <workItem from="1626349814961" duration="5000" />
     </task>
     <servers />
   </component>
@@ -376,19 +318,19 @@
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
     <state x="1910" y="0" key="#Auto_Import/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1623239351500" />
-    <state x="1640" y="4" key="#Project_Structure" timestamp="1626178459811">
+    <state x="1640" y="4" key="#Project_Structure" timestamp="1626317055985">
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
     <state x="200" y="4" key="#Project_Structure/1440.0.1440.860/0.0.1440.860@0.0.1440.860" timestamp="1621649324629" />
-    <state x="1640" y="4" key="#Project_Structure/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1626178459811" />
+    <state x="1640" y="4" key="#Project_Structure/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1626317055985" />
     <state x="1788" y="100" width="1092" height="716" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1623334933083">
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
     <state x="1788" y="100" width="1092" height="716" key="#com.intellij.execution.impl.EditConfigurationsDialog/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1623334933083" />
-    <state x="1965" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1625569788318">
+    <state x="1965" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1626312714851">
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
-    <state x="1965" y="113" key="#com.intellij.ide.util.MemberChooser/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1625569788318" />
+    <state x="1965" y="113" key="#com.intellij.ide.util.MemberChooser/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1626312714851" />
     <state x="2004" y="245" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1620724950064">
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
@@ -489,26 +431,27 @@
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
     <state x="1971" y="118" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1624581282975" />
-    <state x="141" y="82" width="1066" height="628" key="dock-window-1" timestamp="1625731705851">
+    <state x="147" y="0" width="1018" height="704" key="dock-window-1" timestamp="1626313074337">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="141" y="82" width="1066" height="628" key="dock-window-1/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1625731705851" />
-    <state x="439" y="91" width="719" height="624" key="dock-window-2" timestamp="1625103001159">
+    <state x="147" y="0" width="1018" height="704" key="dock-window-1/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1626313074337" />
+    <state x="199" y="62" width="1018" height="721" key="dock-window-2" timestamp="1626319149372">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="439" y="91" width="719" height="624" key="dock-window-2/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1625103001159" />
+    <state x="199" y="62" width="1018" height="721" key="dock-window-2/1440.0.1440.860/0.0.1440.860@0.0.1440.860" timestamp="1626319149372" />
+    <state x="846" y="1" width="1018" height="721" key="dock-window-2/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1626313704124" />
     <state x="1861" y="162" width="755" height="536" key="find.popup" timestamp="1624502608986">
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
     <state x="1861" y="162" width="755" height="536" key="find.popup/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1624502608986" />
-    <state x="1538" y="79" key="new project wizard" timestamp="1625902761982">
+    <state x="1538" y="79" key="new project wizard" timestamp="1626309838941">
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
-    <state x="1538" y="79" key="new project wizard/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1625902761982" />
-    <state x="1823" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1626245724435">
+    <state x="1538" y="79" key="new project wizard/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1626309838941" />
+    <state x="1823" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1626314125356">
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
-    <state x="1823" y="180" width="672" height="678" key="search.everywhere.popup/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1626245724435" />
+    <state x="1823" y="180" width="672" height="678" key="search.everywhere.popup/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1626314125356" />
     <state x="1763" y="112" key="spring file set editor" timestamp="1619679298551">
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
