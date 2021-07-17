@@ -4,6 +4,8 @@ E:\Java_project\springCloud_Shop\changgou_parent\changgou_service_api\changgou_s
 E:\Java_project\springCloud_Shop\changgou_parent\changgou_service_api\changgou_service_goods_api\src\main\java\com\changgou\goods\pojo\Category.java
 E:\Java_project\springCloud_Shop\changgou_parent\changgou_service_api\changgou_service_goods_api\src\main\java\com\changgou\goods\pojo\Para.java
 E:\Java_project\springCloud_Shop\changgou_parent\changgou_service_api\changgou_service_goods_api\src\main\java\com\changgou\goods\pojo\Spu.java
+E:\Java_project\springCloud_Shop\changgou_parent\changgou_service_api\changgou_service_goods_api\src\main\java\com\changgou\goods\feign\CategoryFeign.java
+E:\Java_project\springCloud_Shop\changgou_parent\changgou_service_api\changgou_service_goods_api\src\main\java\com\changgou\goods\feign\SpuFeign.java
 E:\Java_project\springCloud_Shop\changgou_parent\changgou_service_api\changgou_service_goods_api\src\main\java\com\changgou\goods\pojo\Spec.java
 E:\Java_project\springCloud_Shop\changgou_parent\changgou_service_api\changgou_service_goods_api\src\main\java\com\changgou\goods\pojo\Template.java
 E:\Java_project\springCloud_Shop\changgou_parent\changgou_service_api\changgou_service_goods_api\src\main\java\com\changgou\goods\pojo\Album.java

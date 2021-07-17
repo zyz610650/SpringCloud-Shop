@@ -5,6 +5,7 @@ import com.alibaba.otter.canal.protocol.CanalEntry;
 import com.changgou.content.feign.*;
 import com.changgou.content.pojo.Content;
 import com.changgou.entity.Result;
+import com.changgou.item.feign.PageFeign;
 import com.xpand.starter.canal.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.BoundValueOperations;
@@ -28,7 +29,8 @@ public class CanalDataEventListener {
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
 
-
+    @Autowired
+    private PageFeign pageFeign;
 
     /***
      * 自定义数据修改监听
@@ -75,4 +77,43 @@ public class CanalDataEventListener {
         }
         return categoryId;
     }
+
+
+    @ListenPoint(destination = "example",
+            schema = "changgou_goods",
+            table = {"tb_spu"},
+            eventType = {CanalEntry.EventType.UPDATE, CanalEntry.EventType.INSERT, CanalEntry.EventType.DELETE})
+    public void onEventCustomSpu(CanalEntry.EventType eventType,CanalEntry.RowData rowData)
+    {
+        //判断操作类型
+        if (eventType == CanalEntry.EventType.DELETE)
+        {
+            String spuId="";
+            List<CanalEntry.Column> beforeColumnsList=rowData.getBeforeColumnsList();
+            for (CanalEntry.Column column:beforeColumnsList)
+            {
+                if (column.getName().equalsIgnoreCase("id"))
+                {
+                    spuId=column.getValue();
+                    break;
+                }
+            }
+
+            // //todo 删除静态页
+        }else{
+            List<CanalEntry.Column> afterColumnList= rowData.getAfterColumnsList();
+            String spuId="";
+            for (CanalEntry.Column column: afterColumnList)
+            {
+                if (column.getName().equalsIgnoreCase("id"))
+                {
+                    spuId=column.getValue();
+                    break;
+                }
+            }
+            //更新 生成静态页面
+            pageFeign.createHtml(Long.valueOf(spuId));
+        }
+    }
+
 }
