@@ -43,7 +43,7 @@ public class SkuController {
            System.out.println(resultMap);
        }catch (Exception e)
        {
-           System.out.println("11111111111");
+
            e.printStackTrace();
        }
         model.addAttribute("result",resultMap);

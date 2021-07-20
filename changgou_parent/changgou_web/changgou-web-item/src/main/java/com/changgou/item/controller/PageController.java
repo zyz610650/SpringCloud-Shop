@@ -23,6 +23,11 @@ public class PageController {
     @Autowired
     private PageService pageService;
 
+    @RequestMapping("/item")
+    public String getItemPage(String spuId)
+    {
+        return spuId;
+    }
     /**
      * 根据SpuId 生成静态页
      * @param id

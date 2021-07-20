@@ -1,0 +1,25 @@
+server:
+  port: 18089
+spring:
+  application:
+    name: user
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.137.166:3306/changgou_goods?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    username: root
+    password: 123456
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka
+  instance:
+    prefer-ip-address: true
+feign:
+  hystrix:
+    enabled: true
+
+#    datasource:
+#      driver-class-name: com.mysql.cj.jdbc.Driver
+#      url: jdbc:mysql://192.168.137.166:3306/changgou_goods?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+#      username: root
+#      password: 123456
