@@ -32,6 +32,7 @@ public class AuthorizeFilter implements GlobalFilter, Ordered {
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
 
+        System.out.println("11");
         ServerHttpRequest request=exchange.getRequest();
         ServerHttpResponse response=exchange.getResponse();
 
