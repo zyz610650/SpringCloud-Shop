@@ -11,46 +11,32 @@ import java.util.Map;
  */
 public class CookieUtil {
 
-    /**
-     * 设置cookie
-     *
-     * @param response
-     * @param name     cookie名字
-     * @param value    cookie值
-     * @param maxAge   cookie生命周期 以秒为单位
-     */
-    public static void addCookie(HttpServletResponse response, String domain, String path, String name,
-                                 String value, int maxAge, boolean httpOnly) {
-        Cookie cookie = new Cookie(name, value);
-        cookie.setDomain(domain);
+    public static void addCookie(HttpServletResponse response,String domain,String path,String name,String value,int maxAge,boolean httpOnly)
+    {
+        Cookie cookie=new Cookie(name,value);
         cookie.setPath(path);
-        cookie.setMaxAge(maxAge);
+        cookie.setDomain(domain);
         cookie.setHttpOnly(httpOnly);
+        cookie.setMaxAge(maxAge);
         response.addCookie(cookie);
     }
 
+    public static Map<String,String> readCookie(HttpServletRequest request,String ... cookieNames)
+    {
+        Map<String,String> map=new HashMap<>();
+        Cookie[] cookies=request.getCookies();
+        if (cookies==null) return map;
 
-
-    /**
-     * 根据cookie名称读取cookie
-     * @param request
-     * @return map<cookieName,cookieValue>
-     */
-
-    public static Map<String,String> readCookie(HttpServletRequest request, String ... cookieNames) {
-        Map<String,String> cookieMap = new HashMap<String,String>();
-            Cookie[] cookies = request.getCookies();
-            if (cookies != null) {
-                for (Cookie cookie : cookies) {
-                    String cookieName = cookie.getName();
-                    String cookieValue = cookie.getValue();
-                    for(int i=0;i<cookieNames.length;i++){
-                        if(cookieNames[i].equals(cookieName)){
-                            cookieMap.put(cookieName,cookieValue);
-                        }
+            for (int i=0;i<cookieNames.length;i++)
+            {
+                for (int j=0;j<cookies.length;j++)
+                {
+                    if (cookieNames[i]==cookies[j].getName())
+                    {
+                        map.put(cookieNames[i],cookies[j].getValue());
                     }
                 }
             }
-        return cookieMap;
+        return map;
     }
 }
