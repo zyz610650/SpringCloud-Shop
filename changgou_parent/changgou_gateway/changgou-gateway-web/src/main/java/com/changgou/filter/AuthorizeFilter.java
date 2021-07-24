@@ -32,7 +32,7 @@ public class AuthorizeFilter implements GlobalFilter, Ordered {
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
 
-        System.out.println("11");
+
         ServerHttpRequest request=exchange.getRequest();
         ServerHttpResponse response=exchange.getResponse();
 
@@ -61,8 +61,11 @@ public class AuthorizeFilter implements GlobalFilter, Ordered {
         }
 
         try {
-            Claims claims= JwtUtil.parseJWT(tokent);
-            request.mutate().header(AUTHORIZE_TOKEN,claims.toString());
+//            Claims claims= JwtUtil.parseJWT(tokent);
+//            request.mutate().header(AUTHORIZE_TOKEN,claims.toString());
+            if (!tokent.startsWith("bearer ")&&!tokent.startsWith("Bearer "))
+                tokent="bearer "+tokent;
+            request.mutate().header(AUTHORIZE_TOKEN,tokent);
         } catch (Exception e) {
             e.printStackTrace();
             response.setStatusCode(HttpStatus.UNAUTHORIZED);

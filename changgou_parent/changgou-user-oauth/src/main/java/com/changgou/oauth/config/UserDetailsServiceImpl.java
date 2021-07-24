@@ -1,6 +1,8 @@
 package com.changgou.oauth.config;
 
+import com.changgou.entity.Result;
 import com.changgou.oauth.util.UserJwt;
+import com.changgou.user.feign.UserFeign;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.authority.AuthorityUtils;
@@ -24,6 +26,8 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     @Autowired
     ClientDetailsService clientDetailsService;
 
+    @Autowired
+    UserFeign userFeign;
     /****
      * 自定义授权认证
      * @param username
@@ -32,10 +36,11 @@ public class UserDetailsServiceImpl implements UserDetailsService {
      */
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        System.out.println(333);
+
         //取出身份，如果身份为空说明没有认证
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         //没有认证统一采用httpbasic认证，httpbasic中存储了client_id和client_secret，开始认证client_id和client_secret
+        //这的信息是从数据库查出来的
         if(authentication==null){
             ClientDetails clientDetails = clientDetailsService.loadClientByClientId(username);
             if(clientDetails!=null){
@@ -52,11 +57,13 @@ public class UserDetailsServiceImpl implements UserDetailsService {
             return null;
         }
 
+        Result<com.changgou.user.pojo.User> result=userFeign.findById(username);
+
         //根据用户名查询用户信息
         String pwd = new BCryptPasswordEncoder().encode("itheima");
         //创建User对象
-        String permissions = "goods_list,seckill_list";
-        UserJwt userDetails = new UserJwt(username,pwd,AuthorityUtils.commaSeparatedStringToAuthorityList(permissions));
+        String permissions = "salesman,accountant,user";
+        UserJwt userDetails = new UserJwt(username,result.getData().getPassword(),AuthorityUtils.commaSeparatedStringToAuthorityList(permissions));
         return userDetails;
     }
 }

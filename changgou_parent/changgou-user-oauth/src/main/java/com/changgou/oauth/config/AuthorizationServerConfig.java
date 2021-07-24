@@ -53,8 +53,23 @@ class AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter {
      */
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
-        clients.jdbc(dataSource).clients(clientDetails());
+       clients.jdbc(dataSource).clients(clientDetails());
+//          clients.inMemory()
+//                  .withClient("changgou")
+//                  .secret("changgou")
+//                  .redirectUris("http://localhost")
+//                  .accessTokenValiditySeconds(3600)
+//                  .refreshTokenValiditySeconds(3600)
+//                  .authorizedGrantTypes(
+//                          "authorization_code",
+//                          "client_credentials",
+//                          "refresh_token",
+//                          "password"
+//                  ).scopes("app");
+
+
     }
+
 
     /***
      * 授权服务器端点配置

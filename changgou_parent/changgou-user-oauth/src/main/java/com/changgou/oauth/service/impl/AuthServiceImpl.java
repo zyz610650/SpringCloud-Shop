@@ -40,12 +40,11 @@ public class AuthServiceImpl implements AuthService {
 
     @Override
     public AuthToken login(String username, String pwd, String clientId, String clientSecret) {
-        System.out.println(2);
+
         ServiceInstance serviceInstance=loadBalancerClient.choose("user-auth");
         if (serviceInstance==null) throw new RuntimeException("找不到对应的服务");
         String path=serviceInstance.getUri().toString()+"/oauth/token";
-        System.out.println("URI: "+serviceInstance.getUri());
-        System.out.println("Host: "+serviceInstance.getHost());
+
         MultiValueMap<String,String> formData=new LinkedMultiValueMap<>();
         formData.add("grant_type","password");
         formData.add("username",username);

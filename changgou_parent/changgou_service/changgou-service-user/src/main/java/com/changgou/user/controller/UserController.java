@@ -12,6 +12,7 @@ import com.github.pagehelper.PageInfo;
 import com.netflix.ribbon.proxy.annotation.Http;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.connection.RedisServer;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.Cookie;
@@ -88,6 +89,7 @@ public class UserController {
      * @param id
      * @return
      */
+    @PreAuthorize("hasAnyAuthority('admin')")
     @DeleteMapping(value = "/{id}")
     public Result delete(@PathVariable String id) {
         //调用UserService实现根据主键删除
@@ -127,7 +129,7 @@ public class UserController {
      * @param id
      * @return
      */
-    @GetMapping("/{id}")
+    @GetMapping({"/{id}","/load/{id}"})
     public Result<User> findById(@PathVariable String id) {
         //调用UserService实现根据主键查询User
         User user = userService.findById(id);

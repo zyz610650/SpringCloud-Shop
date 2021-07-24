@@ -6,49 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="688e3756-3b0f-4c66-ac93-754b9f19a92b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou-user-oauth/changgou-user-oauth.iml" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou-user-oauth/changgou-user-oauth.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou-user-oauth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou-user-oauth/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/changgou_parent/changgou-user-oauth/src/main/java/com/changgou/OAuthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou-user-oauth/src/main/java/com/changgou/OAuthApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou-user-oauth/src/main/java/com/changgou/oauth/config/AuthorizationServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou-user-oauth/src/main/java/com/changgou/oauth/config/AuthorizationServerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/changgou_parent/changgou-user-oauth/src/main/java/com/changgou/oauth/config/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou-user-oauth/src/main/java/com/changgou/oauth/config/UserDetailsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou-user-oauth/src/main/java/com/changgou/oauth/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou-user-oauth/src/main/java/com/changgou/oauth/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou-user-oauth/src/main/java/com/changgou/oauth/util/CookieUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou-user-oauth/src/main/java/com/changgou/oauth/util/CookieUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou-user-oauth/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou-user-oauth/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou-user-oauth/src/main/resources/public.key" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou-user-oauth/src/main/resources/public.key" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou-user-oauth/src/test/java/com/changgou/oauth/CreateJwtTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou-user-oauth/src/test/java/com/changgou/oauth/CreateJwtTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou-user-oauth/src/test/java/com/changgou/oauth/ParseJwtTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou-user-oauth/src/test/java/com/changgou/oauth/ParseJwtTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_common/target/changgou-common-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_common/target/changgou-common-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_common_db/target/changgou-common-db-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_common_db/target/changgou-common-db-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_eureka/target/changgou-eureka-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_eureka/target/changgou-eureka-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_gateway/changgou-gateway-web/target/changgou-gateway-web-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_gateway/changgou-gateway-web/target/changgou-gateway-web-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-canal/target/changgou-service-canal-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-canal/target/changgou-service-canal-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-content/target/changgou-service-content-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-content/target/changgou-service-content-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-goods/target/changgou-service-goods-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-goods/target/changgou-service-goods-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-search/target/changgou-service-search-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-search/target/changgou-service-search-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-user/target/changgou-service-user-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-user/target/changgou-service-user-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-user/target/classes/applicatio.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-user/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-user/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_service_file/target/changgou_service_file-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_service_file/target/changgou_service_file-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-content-api/target/changgou-service-content-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-content-api/target/changgou-service-content-api-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-search-api/target/changgou-service-search-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-search-api/target/changgou-service-search-api-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-search-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-search-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-search-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-search-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-user-api/target/changgou-service-user-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-user-api/target/changgou-service-user-api-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-user-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-user-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-user-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-user-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-web-item-api/target/changgou-web-item-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-web-item-api/target/changgou-web-item-api-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-web-item-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-web-item-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-web-item-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-web-item-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou_service_goods_api/target/changgou_service_goods_api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou_service_goods_api/target/changgou_service_goods_api-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou_service_goods_api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou_service_goods_api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou_service_goods_api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou_service_goods_api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_web/changgou-web-item/target/changgou-web-item-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_web/changgou-web-item/target/changgou-web-item-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_web/changgou-web-item/target/classes/templates/items/1146722014917144576.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_web/changgou-web-item/target/classes/templates/items/item.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_web/changgou-web-item/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_web/changgou-web-item/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_web/changgou-web-item/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_web/changgou-web-item/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_web/changgou-web-search/target/changgou-web-search-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_web/changgou-web-search/target/changgou-web-search-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_web/changgou-web-search/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_web/changgou-web-search/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_web/changgou-web-search/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_web/changgou-web-search/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou-user-oauth/src/main/java/com/changgou/oauth/service/impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou-user-oauth/src/main/java/com/changgou/oauth/service/impl/AuthServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou-user-oauth/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou-user-oauth/src/main/resources/changgou.jks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou-user-oauth/src/main/resources/public.key" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_gateway/changgou-gateway-web/src/main/java/com/changgou/filter/AuthorizeFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_gateway/changgou-gateway-web/src/main/java/com/changgou/filter/AuthorizeFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-user/changgou-service-user.iml" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-user/changgou-service-user.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-user/src/main/java/com/changgou/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-user/src/main/java/com/changgou/user/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oath/changgou.jks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oath/public.key" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,8 +32,8 @@
       <list>
         <option value="JavaFXApplication" />
         <option value="Yml File" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -96,7 +68,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/changgou_parent/changgou-user-oauth/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-user/src/main/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.39885056" />
@@ -106,24 +78,24 @@
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Java_project\springCloud_Shop\changgou_parent\changgou-user-oauth\src\main\resources" />
-      <recent name="E:\Java_project\springCloud_Shop\changgou_parent\changgou-user-oauth" />
-      <recent name="E:\Java_project\springCloud_Shop\changgou_parent" />
-      <recent name="E:\Java_project\springCloud_Shop\changgou_parent\changgou_service\changgou-service-user\src\main\java" />
-      <recent name="E:\Java_project\springCloud_Shop\changgou_parent\changgou_service_api\changgou-service-user-api\src\main\java" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.changgou.entity" />
-      <recent name="com.changgou.goods" />
-      <recent name="com.changgou.goods.controller" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Java_project\springCloud_Shop\changgou_parent\changgou_service_api\changgou-service-user-api\src\main\java" />
       <recent name="E:\Java_project\springCloud_Shop\changgou_parent\changgou_web\changgou-web-item\src\main\resources\templates" />
       <recent name="E:\Java_project\springCloud_Shop\changgou_parent\changgou_web\changgou-web-search\src\main\resources\templates" />
       <recent name="E:\Java_project\springCloud_Shop\changgou_parent\changgou_service\changgou-service-search\src\main\java\com\changgou\search" />
       <recent name="E:\Java_project\springCloud_Shop\changgou_parent\changgou_service\changgou-service-search\src\main\java\com\changgou\search\controller" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.changgou.entity" />
+      <recent name="com.changgou.goods" />
+      <recent name="com.changgou.goods.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Java_project\springCloud_Shop\changgou_parent\changgou_service\changgou-service-user\src\main\resources" />
+      <recent name="E:\Java_project\springCloud_Shop\changgou_parent\changgou-user-oauth\src\main\resources" />
+      <recent name="E:\Java_project\springCloud_Shop\changgou_parent\changgou-user-oauth" />
+      <recent name="E:\Java_project\springCloud_Shop\changgou_parent" />
+      <recent name="E:\Java_project\springCloud_Shop\changgou_parent\changgou_service\changgou-service-user\src\main\java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -280,6 +252,8 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.CreateJwtTest.testCreateToken" />
+      <item itemvalue="JUnit.ParseJwtTest.testParseToken" />
       <item itemvalue="Spring Boot.EurekaServerApplication10087" />
       <item itemvalue="Spring Boot.EurekaServerApplication10088" />
       <item itemvalue="Spring Boot.UserApplication9092" />
@@ -287,8 +261,6 @@
       <item itemvalue="Spring Boot.ConsumerApplication" />
       <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Spring Boot.GatewayWebApplication" />
-      <item itemvalue="JUnit.CreateJwtTest.testCreateToken" />
-      <item itemvalue="JUnit.ParseJwtTest.testParseToken" />
       <item itemvalue="Spring Boot.EurekaApplication" />
       <item itemvalue="Spring Boot.OAuthApplication" />
     </list>
@@ -379,6 +351,9 @@
       <workItem from="1626782136705" duration="8000" />
       <workItem from="1626827935868" duration="7449000" />
       <workItem from="1626913912435" duration="18055000" />
+      <workItem from="1626999899987" duration="1182000" />
+      <workItem from="1627007273268" duration="3835000" />
+      <workItem from="1627090899918" duration="12813000" />
     </task>
     <servers />
   </component>
@@ -399,10 +374,10 @@
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
     <state x="1788" y="100" width="1092" height="716" key="#com.intellij.execution.impl.EditConfigurationsDialog/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1623334933083" />
-    <state x="1885" y="230" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1626924437890">
+    <state x="1885" y="230" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1627096431431">
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
-    <state x="1885" y="230" key="#com.intellij.fileTypes.FileTypeChooser/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1626924437890" />
+    <state x="1885" y="230" key="#com.intellij.fileTypes.FileTypeChooser/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1627096431431" />
     <state x="1965" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1626920080799">
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
@@ -431,46 +406,46 @@
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
     <state x="1871" y="226" key="FileChooserDialogImpl/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1626860453409" />
-    <state width="1038" height="209" key="GridCell.Tab.0.bottom" timestamp="1626940453541">
+    <state width="1038" height="209" key="GridCell.Tab.0.bottom" timestamp="1626961243899">
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
     <state width="1038" height="161" key="GridCell.Tab.0.bottom/1440.0.1440.860/0.0.1440.860@0.0.1440.860" timestamp="1626867714944" />
-    <state width="1038" height="209" key="GridCell.Tab.0.bottom/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1626940453541" />
-    <state width="1038" height="209" key="GridCell.Tab.0.center" timestamp="1626940453541">
+    <state width="1038" height="209" key="GridCell.Tab.0.bottom/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1626961243899" />
+    <state width="1038" height="209" key="GridCell.Tab.0.center" timestamp="1626961243899">
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
     <state width="1038" height="161" key="GridCell.Tab.0.center/1440.0.1440.860/0.0.1440.860@0.0.1440.860" timestamp="1626867714944" />
-    <state width="1038" height="209" key="GridCell.Tab.0.center/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1626940453541" />
-    <state width="1038" height="209" key="GridCell.Tab.0.left" timestamp="1626940453541">
+    <state width="1038" height="209" key="GridCell.Tab.0.center/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1626961243899" />
+    <state width="1038" height="209" key="GridCell.Tab.0.left" timestamp="1626961243899">
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
     <state width="1038" height="161" key="GridCell.Tab.0.left/1440.0.1440.860/0.0.1440.860@0.0.1440.860" timestamp="1626867714943" />
-    <state width="1038" height="209" key="GridCell.Tab.0.left/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1626940453541" />
-    <state width="1038" height="209" key="GridCell.Tab.0.right" timestamp="1626940453541">
+    <state width="1038" height="209" key="GridCell.Tab.0.left/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1626961243899" />
+    <state width="1038" height="209" key="GridCell.Tab.0.right" timestamp="1626961243899">
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
     <state width="1038" height="161" key="GridCell.Tab.0.right/1440.0.1440.860/0.0.1440.860@0.0.1440.860" timestamp="1626867714944" />
-    <state width="1038" height="209" key="GridCell.Tab.0.right/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1626940453541" />
-    <state width="1038" height="209" key="GridCell.Tab.1.bottom" timestamp="1626940453541">
+    <state width="1038" height="209" key="GridCell.Tab.0.right/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1626961243899" />
+    <state width="1038" height="209" key="GridCell.Tab.1.bottom" timestamp="1626961243900">
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
     <state width="1038" height="161" key="GridCell.Tab.1.bottom/1440.0.1440.860/0.0.1440.860@0.0.1440.860" timestamp="1626867714944" />
-    <state width="1038" height="209" key="GridCell.Tab.1.bottom/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1626940453541" />
-    <state width="1038" height="209" key="GridCell.Tab.1.center" timestamp="1626940453541">
+    <state width="1038" height="209" key="GridCell.Tab.1.bottom/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1626961243900" />
+    <state width="1038" height="209" key="GridCell.Tab.1.center" timestamp="1626961243900">
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
     <state width="1038" height="161" key="GridCell.Tab.1.center/1440.0.1440.860/0.0.1440.860@0.0.1440.860" timestamp="1626867714944" />
-    <state width="1038" height="209" key="GridCell.Tab.1.center/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1626940453541" />
-    <state width="1038" height="209" key="GridCell.Tab.1.left" timestamp="1626940453541">
+    <state width="1038" height="209" key="GridCell.Tab.1.center/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1626961243900" />
+    <state width="1038" height="209" key="GridCell.Tab.1.left" timestamp="1626961243899">
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
     <state width="1038" height="161" key="GridCell.Tab.1.left/1440.0.1440.860/0.0.1440.860@0.0.1440.860" timestamp="1626867714944" />
-    <state width="1038" height="209" key="GridCell.Tab.1.left/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1626940453541" />
-    <state width="1038" height="209" key="GridCell.Tab.1.right" timestamp="1626940453541">
+    <state width="1038" height="209" key="GridCell.Tab.1.left/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1626961243899" />
+    <state width="1038" height="209" key="GridCell.Tab.1.right" timestamp="1626961243900">
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
     <state width="1038" height="161" key="GridCell.Tab.1.right/1440.0.1440.860/0.0.1440.860@0.0.1440.860" timestamp="1626867714944" />
-    <state width="1038" height="209" key="GridCell.Tab.1.right/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1626940453541" />
+    <state width="1038" height="209" key="GridCell.Tab.1.right/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1626961243900" />
     <state width="1038" height="272" key="GridCell.Tab.2.bottom" timestamp="1626939336373">
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
@@ -538,16 +513,5 @@
       <screen x="1440" y="0" width="1440" height="860" />
     </state>
     <state x="1763" y="112" key="spring file set editor/1440.0.1440.860/0.0.1440.860@1440.0.1440.860" timestamp="1619679298551" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/changgou_parent/changgou-user-oauth/src/main/java/com/changgou/oauth/service/impl/AuthServiceImpl.java</url>
-          <line>53</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
