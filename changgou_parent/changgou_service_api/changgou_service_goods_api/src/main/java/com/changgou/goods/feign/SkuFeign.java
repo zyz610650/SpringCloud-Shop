@@ -2,6 +2,7 @@ package com.changgou.goods.feign;
 
 import com.changgou.entity.CacheKey;
 import com.changgou.entity.Result;
+import com.changgou.entity.StatusCode;
 import com.changgou.goods.pojo.Category;
 import com.changgou.goods.pojo.Sku;
 import com.changgou.goods.pojo.Spu;
@@ -30,8 +31,11 @@ public interface SkuFeign {
     Result<List<Sku>>  findByStatus(@PathVariable String status);
 
 
+    @GetMapping("/{id}")
+    public Result<Sku> findById(@PathVariable Long id);
 
     /**
+     *
      * 根据条件查询sku信息
      * @param sku
      * @return

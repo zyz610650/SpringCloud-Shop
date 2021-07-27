@@ -54,6 +54,7 @@ class AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter {
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
        clients.jdbc(dataSource).clients(clientDetails());
+       //原来这些东西都是写死的 现在从数据库里查
 //          clients.inMemory()
 //                  .withClient("changgou")
 //                  .secret("changgou")

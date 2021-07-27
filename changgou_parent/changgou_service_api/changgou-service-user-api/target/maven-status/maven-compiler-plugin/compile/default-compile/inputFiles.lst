@@ -1,5 +1,6 @@
 E:\Java_project\springCloud_Shop\changgou_parent\changgou_service_api\changgou-service-user-api\src\main\java\com\changgou\user\pojo\OauthClientDetails.java
 E:\Java_project\springCloud_Shop\changgou_parent\changgou_service_api\changgou-service-user-api\src\main\java\com\changgou\user\pojo\Areas.java
+E:\Java_project\springCloud_Shop\changgou_parent\changgou_service_api\changgou-service-user-api\src\main\java\com\changgou\user\feign\UserFeign.java
 E:\Java_project\springCloud_Shop\changgou_parent\changgou_service_api\changgou-service-user-api\src\main\java\com\changgou\user\pojo\User.java
 E:\Java_project\springCloud_Shop\changgou_parent\changgou_service_api\changgou-service-user-api\src\main\java\com\changgou\user\pojo\Address.java
 E:\Java_project\springCloud_Shop\changgou_parent\changgou_service_api\changgou-service-user-api\src\main\java\com\changgou\user\pojo\UndoLog.java

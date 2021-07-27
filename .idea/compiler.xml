@@ -7,27 +7,30 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="changgou-service-search-api" />
         <module name="changgou_common_db" />
         <module name="changgou-user-oauth" />
         <module name="changgou_eureka" />
-        <module name="changgou-web-search" />
         <module name="changgou-service-content" />
         <module name="changgou-web-item-api" />
         <module name="changgou-service-search" />
         <module name="user-service" />
         <module name="eureka-server" />
+        <module name="changgou-service-user" />
+        <module name="changgou-service-canal" />
+        <module name="changgou-service-content-api" />
+        <module name="code-template" />
+        <module name="changgou-gateway-web" />
+        <module name="changgou-service-order-api" />
+        <module name="changgou-service-search-api" />
+        <module name="changgou-web-search" />
+        <module name="changgou-service-order" />
         <module name="changgou-service-goods" />
         <module name="changgou_common" />
         <module name="changgou_service_file" />
-        <module name="changgou-service-user" />
         <module name="changgou_service_goods_api" />
-        <module name="changgou-service-canal" />
-        <module name="changgou-service-content-api" />
         <module name="consumer-demo" />
         <module name="changgou-service-user-api" />
         <module name="changgou-web-item" />
-        <module name="changgou-gateway-web" />
         <module name="gateway" />
       </profile>
     </annotationProcessing>
@@ -37,6 +40,8 @@
       <module name="changgou-service-content" target="1.8" />
       <module name="changgou-service-content-api" target="1.8" />
       <module name="changgou-service-goods" target="1.8" />
+      <module name="changgou-service-order" target="1.8" />
+      <module name="changgou-service-order-api" target="1.8" />
       <module name="changgou-service-search" target="1.8" />
       <module name="changgou-service-search-api" target="1.8" />
       <module name="changgou-service-user" target="1.8" />
@@ -55,7 +60,7 @@
       <module name="changgou_service_file" target="1.8" />
       <module name="changgou_service_goods_api" target="1.8" />
       <module name="changgou_web" target="1.8" />
-      <module name="code-template" target="8" />
+      <module name="code-template" target="1.8" />
       <module name="consumer-demo" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="gateway" target="1.8" />
@@ -70,6 +75,8 @@
       <module name="changgou-service-content" options="-parameters" />
       <module name="changgou-service-content-api" options="-parameters" />
       <module name="changgou-service-goods" options="-parameters" />
+      <module name="changgou-service-order" options="-parameters" />
+      <module name="changgou-service-order-api" options="-parameters" />
       <module name="changgou-service-search" options="-parameters" />
       <module name="changgou-service-search-api" options="-parameters" />
       <module name="changgou-service-user" options="-parameters" />

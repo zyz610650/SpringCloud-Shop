@@ -17,6 +17,7 @@ E:\Java_project\springCloud_Shop\changgou_parent\changgou_service\changgou-servi
 E:\Java_project\springCloud_Shop\changgou_parent\changgou_service\changgou-service-user\src\main\java\com\changgou\user\service\impl\OauthClientDetailsServiceImpl.java
 E:\Java_project\springCloud_Shop\changgou_parent\changgou_service\changgou-service-user\src\main\java\com\changgou\user\dao\CitiesMapper.java
 E:\Java_project\springCloud_Shop\changgou_parent\changgou_service\changgou-service-user\src\main\java\com\changgou\user\service\impl\AreasServiceImpl.java
+E:\Java_project\springCloud_Shop\changgou_parent\changgou_service\changgou-service-user\src\main\java\com\changgou\user\config\ResourceServerConfig.java
 E:\Java_project\springCloud_Shop\changgou_parent\changgou_service\changgou-service-user\src\main\java\com\changgou\user\dao\OauthClientDetailsMapper.java
 E:\Java_project\springCloud_Shop\changgou_parent\changgou_service\changgou-service-user\src\main\java\com\changgou\user\service\AddressService.java
 E:\Java_project\springCloud_Shop\changgou_parent\changgou_service\changgou-service-user\src\main\java\com\changgou\user\service\OauthClientDetailsService.java

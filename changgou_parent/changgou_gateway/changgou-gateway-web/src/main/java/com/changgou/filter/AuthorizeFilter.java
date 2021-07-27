@@ -38,7 +38,7 @@ public class AuthorizeFilter implements GlobalFilter, Ordered {
 
         String path=request.getURI().getPath();
 
-        if (path.startsWith("/api/user/login")||path.startsWith("/api/brand/search/"))
+        if (URLFilter.hasAuthorize(path))
         {
             Mono<Void> filter=chain.filter(exchange);
             return filter;

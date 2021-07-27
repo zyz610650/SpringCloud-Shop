@@ -16,6 +16,7 @@
         <module>changgou_service_file</module>
         <module>changgou-service-search</module>
         <module>changgou-service-user</module>
+        <module>changgou-service-order</module>
     </modules>
     <artifactId>changgou_service</artifactId>
     <dependencies>
