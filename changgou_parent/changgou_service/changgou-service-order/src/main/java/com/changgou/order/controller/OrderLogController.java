@@ -1,9 +1,10 @@
 package com.changgou.order.controller;
+import com.changgou.entity.Result;
+import com.changgou.entity.StatusCode;
 import com.changgou.order.pojo.OrderLog;
 import com.changgou.order.service.OrderLogService;
 import com.github.pagehelper.PageInfo;
-import entity.Result;
-import entity.StatusCode;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -34,7 +35,7 @@ public class OrderLogController {
     public Result<PageInfo> findPage(@RequestBody(required = false)  OrderLog orderLog, @PathVariable  int page, @PathVariable  int size){
         //调用OrderLogService实现分页条件查询OrderLog
         PageInfo<OrderLog> pageInfo = orderLogService.findPage(orderLog, page, size);
-        return new Result(true,StatusCode.OK,"查询成功",pageInfo);
+        return new Result(true, StatusCode.OK,"查询成功",pageInfo);
     }
 
     /***

@@ -1,6 +1,7 @@
 package com.changgou.order;
 
 import com.changgou.entity.FeignInterceptor;
+import com.changgou.entity.TokenDecode;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
@@ -31,5 +32,10 @@ public class OrderApplication {
         return new FeignInterceptor();
     }
 
+    @Bean
+    public TokenDecode tokenDecode()
+    {
+        return new TokenDecode();
+    }
 }
 

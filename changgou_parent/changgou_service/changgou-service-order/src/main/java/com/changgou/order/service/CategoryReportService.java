@@ -5,7 +5,7 @@ import java.util.List;
 /****
  * @Author:admin
  * @Description:CategoryReport业务层接口
- * @Date 2019/6/14 0:16
+ * @String 2019/6/14 0:16
  *****/
 public interface CategoryReportService {
 
@@ -37,7 +37,7 @@ public interface CategoryReportService {
      * 删除CategoryReport
      * @param id
      */
-    void delete(Date id);
+    void delete(String id);
 
     /***
      * 修改CategoryReport数据
@@ -56,7 +56,7 @@ public interface CategoryReportService {
      * @param id
      * @return
      */
-     CategoryReport findById(Date id);
+     CategoryReport findById(String id);
 
     /***
      * 查询所有CategoryReport
