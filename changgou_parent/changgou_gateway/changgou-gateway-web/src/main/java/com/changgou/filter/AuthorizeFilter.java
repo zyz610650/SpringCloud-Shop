@@ -28,6 +28,7 @@ public class AuthorizeFilter implements GlobalFilter, Ordered {
 
     private static final String AUTHORIZE_TOKEN="Authorization";
 
+    private static final String USER_LOGIN_URL="http://localhost:9001/oauth/login";
 
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
@@ -57,7 +58,7 @@ public class AuthorizeFilter implements GlobalFilter, Ordered {
         if (StringUtils.isEmpty(tokent))
         {
             response.setStatusCode(HttpStatus.METHOD_NOT_ALLOWED);
-            return response.setComplete();
+            return needAuthorization(USER_LOGIN_URL,exchange);
         }
 
         try {
@@ -73,6 +74,13 @@ public class AuthorizeFilter implements GlobalFilter, Ordered {
         }
 
         return chain.filter(exchange);
+    }
+    public Mono<Void> needAuthorization(String url,ServerWebExchange exchange)
+    {
+        ServerHttpResponse response=exchange.getResponse();
+        response.setStatusCode(HttpStatus.SEE_OTHER);
+        response.getHeaders().set("Location",url);
+        return exchange.getResponse().setComplete();
     }
 
     @Override

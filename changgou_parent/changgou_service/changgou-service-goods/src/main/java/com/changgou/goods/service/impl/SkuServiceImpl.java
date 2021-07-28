@@ -12,6 +12,7 @@ import tk.mybatis.mapper.entity.Example;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 /****
  * @Author:shenkunlin
@@ -23,6 +24,16 @@ public class SkuServiceImpl implements SkuService {
 
     @Autowired
     private SkuMapper skuMapper;
+
+    @Override
+    public void derCount(Map<String,Integer> map) {
+
+        for (Map.Entry<String,Integer> entry:map.entrySet())
+        {
+            int count=skuMapper.derCount(entry.getKey(), entry.getValue());
+            if (count<=0) throw new RuntimeException("库存不足,递减失败！");
+        }
+    }
 
     @Override
     public List<Sku> findByStatus(String status) {
@@ -43,6 +54,7 @@ public class SkuServiceImpl implements SkuService {
         sku.setNum(sku.getNum()-num);
         sku.setUpdateTime(new Date());
         skuMapper.updateByPrimaryKeySelective(sku);
+
     }
 
     /**

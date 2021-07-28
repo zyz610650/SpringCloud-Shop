@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 /****
  * @Author:shenkunlin
@@ -25,6 +26,19 @@ public class SkuController {
 
     @Autowired
     private SkuService skuService;
+
+    /**
+     * skuid:num
+     * @param map
+     * @return
+     */
+    @PutMapping("/decr")
+    public Result derCount(@RequestBody Map<String,Integer> map)
+    {
+        skuService.derCount(map);
+
+        return new Result(true,StatusCode.OK,"库存递减成功！");
+    }
 
     @GetMapping("/status/{status}")
     public Result<List<Sku>> findByStatus(@PathVariable String status)

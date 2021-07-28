@@ -24,6 +24,12 @@ public class UserServiceImpl implements UserService {
     private UserMapper userMapper;
 
 
+    @Override
+    public void addUserPoints(String username, Integer points) {
+        int count =userMapper.addUserPoints(username,points);
+        if (count<=0) throw new RuntimeException("增加失败");
+    }
+
     /**
      * User条件+分页查询
      * @param user 查询条件

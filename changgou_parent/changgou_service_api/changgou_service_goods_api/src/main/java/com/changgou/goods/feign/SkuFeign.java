@@ -10,6 +10,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author zyz
@@ -30,6 +31,8 @@ public interface SkuFeign {
     @GetMapping("/status/{status}")
     Result<List<Sku>>  findByStatus(@PathVariable String status);
 
+    @PutMapping("/decr")
+    public Result derCount(@RequestBody Map<String,Integer> map);
 
     @GetMapping("/{id}")
     public Result<Sku> findById(@PathVariable Long id);

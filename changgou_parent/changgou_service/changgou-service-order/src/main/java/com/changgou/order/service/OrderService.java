@@ -2,6 +2,8 @@ package com.changgou.order.service;
 import com.changgou.order.pojo.Order;
 import com.github.pagehelper.PageInfo;
 import java.util.List;
+import java.util.Map;
+
 /****
  * @Author:admin
  * @Description:Order业务层接口
@@ -63,4 +65,6 @@ public interface OrderService {
      * @return
      */
     List<Order> findAll();
+
+    void add(Map<String,Object> map);
 }

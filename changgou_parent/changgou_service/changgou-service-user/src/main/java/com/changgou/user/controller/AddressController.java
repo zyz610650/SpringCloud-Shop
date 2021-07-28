@@ -25,6 +25,12 @@ public class AddressController {
     @Autowired
     private AddressService addressService;
 
+    @GetMapping("/list/{username}")
+    public Result<List<Address>> findAddress(@PathVariable  String username)
+    {
+        return new Result<List<Address>>(true,StatusCode.OK,"获取地址成功",addressService.findAddress(username));
+    }
+
     /***
      * Address分页条件搜索实现
      * @param address

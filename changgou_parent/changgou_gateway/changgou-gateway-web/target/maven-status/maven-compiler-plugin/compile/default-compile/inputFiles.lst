@@ -1,3 +1,4 @@
 E:\Java_project\springCloud_Shop\changgou_parent\changgou_gateway\changgou-gateway-web\src\main\java\com\changgou\GatewayWebApplication.java
 E:\Java_project\springCloud_Shop\changgou_parent\changgou_gateway\changgou-gateway-web\src\main\java\com\changgou\filter\AuthorizeFilter.java
 E:\Java_project\springCloud_Shop\changgou_parent\changgou_gateway\changgou-gateway-web\src\main\java\com\changgou\util\JwtUtil.java
+E:\Java_project\springCloud_Shop\changgou_parent\changgou_gateway\changgou-gateway-web\src\main\java\com\changgou\filter\URLFilter.java

@@ -21,4 +21,7 @@ public interface UserFeign {
 
     @GetMapping("/load/{id}")
     public Result<User> findById(@PathVariable String id) ;
+
+    @GetMapping("/points/add/{points}")
+    public Result addPoints(@PathVariable Integer points);
 }

@@ -108,7 +108,7 @@ public class CategoryReportServiceImpl implements CategoryReportService {
      * @param id
      */
     @Override
-    public void delete(Date id){
+    public void delete(String id){
         categoryReportMapper.deleteByPrimaryKey(id);
     }
 
@@ -136,7 +136,7 @@ public class CategoryReportServiceImpl implements CategoryReportService {
      * @return
      */
     @Override
-    public CategoryReport findById(Date id){
+    public CategoryReport findById(String id){
         return  categoryReportMapper.selectByPrimaryKey(id);
     }
 

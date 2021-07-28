@@ -1,5 +1,6 @@
 com\changgou\entity\StatusCode.class
 com\changgou\entity\HttpClient.class
+com\changgou\entity\FeignInterceptor.class
 com\changgou\entity\Message.class
 com\changgou\entity\BCrypt.class
 com\changgou\entity\ChineseUtils.class
@@ -12,3 +13,4 @@ com\changgou\entity\Page.class
 com\changgou\entity\IdWorker.class
 com\changgou\entity\RandomValueUtil.class
 com\changgou\entity\PageResult.class
+com\changgou\entity\TokenDecode.class

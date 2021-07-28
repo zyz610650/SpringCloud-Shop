@@ -1,14 +1,24 @@
 package com.changgou.order.service.impl;
+import com.changgou.entity.IdWorker;
+import com.changgou.entity.Result;
+import com.changgou.goods.feign.SkuFeign;
+import com.changgou.order.dao.OrderItemMapper;
 import com.changgou.order.dao.OrderMapper;
 import com.changgou.order.pojo.Order;
+import com.changgou.order.pojo.OrderItem;
 import com.changgou.order.service.OrderService;
+import com.changgou.user.feign.UserFeign;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 import tk.mybatis.mapper.entity.Example;
-import java.util.List;
+
+import java.util.*;
+
 /****
  * @Author:admin
  * @Description:Order业务层接口实现类
@@ -20,6 +30,79 @@ public class OrderServiceImpl implements OrderService {
     @Autowired
     private OrderMapper orderMapper;
 
+    @Autowired
+    private SkuFeign skuFeign;
+
+    @Autowired
+    private IdWorker idWorker;
+
+    @Autowired
+    private RedisTemplate redisTemplate;
+    @Autowired
+    private OrderItemMapper orderItemMapper;
+
+    @Autowired
+    private UserFeign userFeign;
+
+    @Override
+    public void add(Map<String, Object> map) {
+        List<String> list= (List<String>) map.get("skuIds");
+        String username= (String) map.get("username");
+
+        Map<String,OrderItem> entries = redisTemplate.boundHashOps("Cart+"+username).entries();
+        // 购物车内勾选的商品
+        Map<String,Integer> mapOrderItem=new HashMap<>();
+        List<OrderItem> orderItems=new ArrayList<>();
+        //1.筛选出购物车内勾选的商品
+        for (String id:list)
+        {
+            mapOrderItem.put(id,entries.get(id).getNum());
+            orderItems.add(entries.get(id));
+        }
+        //2.先更新库存
+        Result res=skuFeign.derCount(mapOrderItem);
+        userFeign.addPoints(10);
+        //库存不足
+        if (!res.isFlag()) throw new RuntimeException(res.getMessage());
+
+        //3.库存足则接着生成订单 放着超卖
+        Order order=new Order();
+
+        int totalNum=0,totalMoney=0,totalPayMoney=0;
+        for (OrderItem item:orderItems)
+        {
+            totalMoney+=item.getMoney()*totalNum;
+            totalNum+=item.getNum();
+            totalPayMoney+=item.getPayMoney();
+        }
+        order.setUsername(username);
+        order.setTotalMoney(totalMoney);
+        order.setTotalNum(totalNum);
+        order.setPreMoney(totalPayMoney);
+        order.setPreMoney(totalMoney-totalPayMoney);
+
+        order.setCreateTime(new Date());
+        order.setUpdateTime(order.getCreateTime());
+        order.setBuyerRate("0");
+        order.setSourceType("1");
+        order.setOrderStatus("0");
+        order.setPayStatus("0");
+        order.setId((String.valueOf(idWorker.nextId())));
+
+        orderMapper.insertSelective(order);
+        for (OrderItem orderItem:orderItems)
+        {
+            orderItem.setId(String.valueOf(idWorker.nextId()));
+            orderItem.setIsReturn("0");
+            orderItem.setOrderId(order.getId());
+            orderItemMapper.insertSelective(orderItem);
+        }
+
+        //清除提交订单的购物车内的物品
+         redisTemplate.boundHashOps("Cart_"+username).delete(list);
+        return;
+
+    }
 
     /**
      * Order条件+分页查询
@@ -232,4 +315,6 @@ public class OrderServiceImpl implements OrderService {
     public List<Order> findAll() {
         return orderMapper.selectAll();
     }
+
+
 }

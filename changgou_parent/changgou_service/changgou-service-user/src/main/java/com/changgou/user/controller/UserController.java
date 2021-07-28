@@ -1,10 +1,7 @@
 package com.changgou.user.controller;
 
 import com.alibaba.fastjson.JSON;
-import com.changgou.entity.BCrypt;
-import com.changgou.entity.JwtUtil;
-import com.changgou.entity.Result;
-import com.changgou.entity.StatusCode;
+import com.changgou.entity.*;
 import com.changgou.user.pojo.User;
 import com.changgou.user.service.UserService;
 import com.github.pagehelper.PageInfo;
@@ -35,7 +32,18 @@ import java.util.UUID;
 public class UserController {
 
     @Autowired
+    private TokenDecode tokenDecode;
+    @Autowired
     private UserService userService;
+
+    @GetMapping("/points/add/{points}")
+    public Result addPoints(@PathVariable Integer points)
+    {
+        String username=tokenDecode.getUserInfo().get("username");
+        userService.addUserPoints(username,points);
+        return new Result(true,StatusCode.OK,"添加积分成功！");
+    }
+
 
     public Result<List<User>> findAll(HttpServletRequest request)
     {
@@ -44,6 +52,8 @@ public class UserController {
         List<User> list=userService.findAll();
         return new Result<>(true,StatusCode.OK,"查询成功",list);
     }
+
+
 
     /***
      * User分页条件搜索实现

@@ -25,7 +25,15 @@ class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     public void configure(WebSecurity web) throws Exception {
         web.ignoring().antMatchers(
                 "/user/login",
-                "/user/logout");
+                "/user/logout",
+                "/css/**",
+                "/oauth/login",
+                "/login.html",
+                "/login",
+                "/data/**",
+                "/fonts/**",
+                "/img/**",
+                "/js/**");
     }
 
     /***
@@ -64,6 +72,7 @@ class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()    //限制基于Request请求访问
                 .anyRequest()
                 .authenticated();       //其他请求都需要经过验证
+        http.formLogin().loginPage("/oauth/login").loginProcessingUrl("/user/login");
 
     }
 }

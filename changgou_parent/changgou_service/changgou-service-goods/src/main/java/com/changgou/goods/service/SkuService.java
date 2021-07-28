@@ -4,6 +4,7 @@ import com.changgou.goods.pojo.Sku;
 import com.github.pagehelper.PageInfo;
 
 import java.util.List;
+import java.util.Map;
 
 /****
  * @Author:shenkunlin
@@ -11,6 +12,9 @@ import java.util.List;
  * @Date 2019/6/14 0:16
  *****/
 public interface SkuService {
+
+
+    void derCount(Map<String,Integer> map);
 
     /**
      * 根据状态查询SKU列表

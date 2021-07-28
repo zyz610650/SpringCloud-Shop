@@ -1,14 +1,26 @@
 package com.changgou.order.controller;
+import com.changgou.entity.IdWorker;
 import com.changgou.entity.Result;
 import com.changgou.entity.StatusCode;
+import com.changgou.entity.TokenDecode;
+import com.changgou.goods.feign.SkuFeign;
+import com.changgou.goods.pojo.Sku;
+import com.changgou.goods.pojo.Spu;
 import com.changgou.order.pojo.Order;
+import com.changgou.order.pojo.OrderItem;
 import com.changgou.order.service.OrderService;
 import com.github.pagehelper.PageInfo;
 
 
+import org.aspectj.weaver.ast.Or;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /****
  * @Author:admin
@@ -23,6 +35,26 @@ public class OrderController {
 
     @Autowired
     private OrderService orderService;
+
+    @Autowired
+    private TokenDecode tokenDecode;
+
+    /**
+     * 创建订单
+     * @param map
+     * @return
+     */
+    @PostMapping("/order")
+    public Result add(@RequestBody Map<String,Object> map)
+    {
+        String username= tokenDecode.getUserInfo().get("username");
+        map.put("username",username);
+
+        orderService.add(map);
+        return new Result(true,StatusCode.OK,"订单提交成功！");
+    }
+
+
 
     /***
      * Order分页条件搜索实现

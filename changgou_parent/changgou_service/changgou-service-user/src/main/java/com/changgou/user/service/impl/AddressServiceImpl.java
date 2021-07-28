@@ -167,4 +167,12 @@ public class AddressServiceImpl implements AddressService {
     public List<Address> findAll() {
         return addressMapper.selectAll();
     }
+
+    @Override
+    public List<Address> findAddress(String username) {
+        Address address=new Address();
+        address.setUsername(username);
+        Example example=createExample(address);
+        return addressMapper.selectByExample(example);
+    }
 }
