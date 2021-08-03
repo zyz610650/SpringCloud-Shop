@@ -3,7 +3,8 @@ package com.changgou.service.impl;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.changgou.entity.Amount;
-import com.changgou.entity.Pay;
+
+import com.changgou.pay.pojo.Pay;
 import com.changgou.service.WeixinPayService;
 
 import org.apache.http.NameValuePair;
@@ -16,22 +17,20 @@ import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
+import org.springframework.amqp.AmqpException;
+import org.springframework.amqp.core.Message;
+import org.springframework.amqp.core.MessagePostProcessor;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.security.PrivateKey;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @author zyz
@@ -46,7 +45,6 @@ public class WeixinPayServiceImpl implements WeixinPayService {
 
     @Autowired
     private HttpClient httpClient;
-
 
 
     @Value("${weixin.vxUrl}")
@@ -119,6 +117,8 @@ public class WeixinPayServiceImpl implements WeixinPayService {
         return  dataMap;
     }
 
+
+
     @Override
     public Map<String, String> queryStatus(String out_trade_no) {
         StringBuilder url=new StringBuilder("https://api.mch.weixin.qq.com/v3/pay/transactions/id/");
@@ -154,5 +154,57 @@ public class WeixinPayServiceImpl implements WeixinPayService {
             }
         }
         return resultMap;
+    }
+
+    /**
+     * 关闭订单
+     * @param out_trade_no
+     * @return 成功 true 失败false
+     */
+    @Override
+    public boolean deleteOrder(String out_trade_no) {
+        StringBuffer sb=new StringBuffer("https://api.mch.weixin.qq.com/v3/pay/transactions/out-trade-no/{");
+        sb.append(out_trade_no);
+        sb.append("}/close");
+        //"https://api.mch.weixin.qq.com/v3/pay/transactions/native"
+        HttpPost httpPost = new HttpPost(sb.toString());
+
+        // 请求body参数
+        String reqdata = mchid;
+        StringEntity entity;
+        CloseableHttpResponse response = null;
+        Map<String,String> dataMap = new HashMap<String,String>();
+        try {
+            entity = new StringEntity(reqdata);
+            entity.setContentType("application/json");
+            httpPost.setEntity(entity);
+            httpPost.setHeader("Accept", "application/json");
+
+            //完成签名并执行请求
+            response = (CloseableHttpResponse) httpClient.execute(httpPost);
+
+
+            int statusCode = response.getStatusLine().getStatusCode();
+            if (statusCode == 200) { //处理成功
+                System.out.println("success,return body = " + EntityUtils.toString(response.getEntity()));
+            } else if (statusCode == 204) { //处理成功，无返回Body
+                System.out.println("success");
+            } else {
+                System.out.println("failed,resp code = " + statusCode+ ",return body = " + EntityUtils.toString(response.getEntity()));
+                throw new IOException("request failed");
+            }
+            response.close();
+
+          return true;
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        } catch (ClientProtocolException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+        }
+
+        return false;
     }
 }

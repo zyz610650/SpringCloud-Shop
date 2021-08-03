@@ -98,7 +98,7 @@ public class WeixinPayController {
             String dataResult=resource.get("ciphertext");
             //将消息发送给RabbitMQ
             rabbitTemplate.convertAndSend(exchange,routing,JSON.toJSONString(dataResult));
-
+            
             //解密判断是否有问题
             respMap.put("code","SUCCESS");
             respMap.put("message","成功");
@@ -111,6 +111,19 @@ public class WeixinPayController {
         }
         return (String) JSON.toJSON(respMap);
     }
+
+    /**
+     * 删除微信服务器订单
+     * @param out_trade_no
+     * @return
+     */
+    @RequestMapping("/del")
+    public boolean deleteOrder(String out_trade_no)
+    {
+        return weixinPayService.deleteOrder(out_trade_no);
+    }
+
+
 
 
 }

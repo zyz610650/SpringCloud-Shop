@@ -1,22 +1,29 @@
 package com.changgou.order.service.impl;
+import com.alibaba.fastjson.JSON;
 import com.changgou.entity.IdWorker;
 import com.changgou.entity.Result;
 import com.changgou.goods.feign.SkuFeign;
 import com.changgou.order.dao.OrderItemMapper;
 import com.changgou.order.dao.OrderMapper;
+import com.changgou.order.mq.queue.QueueConfig;
 import com.changgou.order.pojo.Order;
 import com.changgou.order.pojo.OrderItem;
 import com.changgou.order.service.OrderService;
+import com.changgou.pay.feign.PayFeign;
 import com.changgou.user.feign.UserFeign;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import org.springframework.amqp.AmqpException;
+import org.springframework.amqp.core.Message;
+import org.springframework.amqp.core.MessagePostProcessor;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 import tk.mybatis.mapper.entity.Example;
 
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 /****
@@ -42,10 +49,15 @@ public class OrderServiceImpl implements OrderService {
     private OrderItemMapper orderItemMapper;
 
     @Autowired
+    private RabbitTemplate rabbitTemplate;
+
+    @Autowired
     private UserFeign userFeign;
+    @Autowired
+    private PayFeign payFeign;
 
     @Override
-    public void add(Map<String, Object> map) {
+    public Map<String, String> add(Map<String, Object> map) {
         List<String> list= (List<String>) map.get("skuIds");
         String username= (String) map.get("username");
 
@@ -100,7 +112,33 @@ public class OrderServiceImpl implements OrderService {
 
         //清除提交订单的购物车内的物品
          redisTemplate.boundHashOps("Cart_"+username).delete(list);
-        return;
+
+        //创建支付二维码
+
+        Result<Map<String,String>> result = payFeign.createNative(order.getPayMoney(), order.getId());
+        //将订单加入延迟队列
+        sendMessage(order.getId());
+
+        return result.getData();
+
+    }
+
+    /**
+     * 向延迟队列中发送信息
+     * @param out_trade_no
+     */
+    public  void sendMessage(String out_trade_no)
+    {
+        SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        System.out.println("发送当前时间: "+simpleDateFormat.format(new Date())+": "+out_trade_no);
+
+        rabbitTemplate.convertAndSend(QueueConfig.QUEUE_MESSAGE, JSON.parseObject(out_trade_no), new MessagePostProcessor() {
+            @Override
+            public Message postProcessMessage(Message message) throws AmqpException {
+                message.getMessageProperties().setExpiration("300000");
+                return message;
+            }
+        });
 
     }
 

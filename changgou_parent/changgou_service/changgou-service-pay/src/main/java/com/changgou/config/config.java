@@ -9,10 +9,8 @@ import com.wechat.pay.contrib.apache.httpclient.auth.WechatPay2Credentials;
 import com.wechat.pay.contrib.apache.httpclient.auth.WechatPay2Validator;
 import com.wechat.pay.contrib.apache.httpclient.util.PemUtil;
 import org.apache.http.client.HttpClient;
-import org.springframework.amqp.core.Binding;
-import org.springframework.amqp.core.BindingBuilder;
-import org.springframework.amqp.core.DirectExchange;
-import org.springframework.amqp.core.Queue;
+import org.springframework.amqp.core.*;
+import org.springframework.amqp.rabbit.core.RabbitAdmin;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -91,6 +89,7 @@ public class config {
     @Bean
     public DirectExchange basicExchange()
     {
+
         return new DirectExchange(environment.getProperty("mq.pay.exchangge.order"),true,false);
     }
     @Bean

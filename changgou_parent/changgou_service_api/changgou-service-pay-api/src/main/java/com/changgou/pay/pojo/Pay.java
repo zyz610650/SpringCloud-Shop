@@ -1,6 +1,6 @@
-package com.changgou.entity;
+package com.changgou.pay.pojo;
 
-import java.util.Date;
+import com.changgou.entity.Amount;
 
 /**
  * @author zyz

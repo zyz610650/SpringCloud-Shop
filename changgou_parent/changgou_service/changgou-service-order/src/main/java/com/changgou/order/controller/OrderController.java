@@ -40,7 +40,7 @@ public class OrderController {
     private TokenDecode tokenDecode;
 
     /**
-     * 创建订单
+     * 创建订单 返回支付URL
      * @param map
      * @return
      */
@@ -50,8 +50,8 @@ public class OrderController {
         String username= tokenDecode.getUserInfo().get("username");
         map.put("username",username);
 
-        orderService.add(map);
-        return new Result(true,StatusCode.OK,"订单提交成功！");
+        Map<String, String> mapResult= orderService.add(map);
+        return new Result(true,StatusCode.OK,"订单提交成功！",mapResult);
     }
 
 
