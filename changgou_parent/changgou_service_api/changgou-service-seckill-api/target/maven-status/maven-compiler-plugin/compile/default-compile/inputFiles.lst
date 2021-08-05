@@ -1,0 +1,5 @@
+E:\Java_project\springCloud_Shop\changgou_parent\changgou_service_api\changgou-service-seckill-api\src\main\java\com\changgou\seckill\pojo\SeckillOrder.java
+E:\Java_project\springCloud_Shop\changgou_parent\changgou_service_api\changgou-service-seckill-api\src\main\java\com\changgou\seckill\feign\SeckillOrderFeign.java
+E:\Java_project\springCloud_Shop\changgou_parent\changgou_service_api\changgou-service-seckill-api\src\main\java\com\changgou\seckill\pojo\SeckillGoods.java
+E:\Java_project\springCloud_Shop\changgou_parent\changgou_service_api\changgou-service-seckill-api\src\main\java\com\changgou\seckill\pojo\SeckillStatus.java
+E:\Java_project\springCloud_Shop\changgou_parent\changgou_service_api\changgou-service-seckill-api\src\main\java\com\changgou\seckill\feign\SeckillGoodsFeign.java

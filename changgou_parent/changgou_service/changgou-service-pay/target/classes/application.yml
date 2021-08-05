@@ -24,7 +24,14 @@ hystrix:
           enabled: true
         isolation:
           strategy: SEMAPHORE
-
+mq:
+  pay:
+    exchange:
+      order: exchange.order
+    queue:
+      order: queue.order
+    routing:
+      key: queue.order
 #微信支付信息配置
 weixin:
   appid: wx8397f8696b538317

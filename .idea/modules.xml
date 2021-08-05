@@ -15,6 +15,7 @@
       <module fileurl="file://$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-search/changgou-service-search.iml" filepath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-search/changgou-service-search.iml" />
       <module fileurl="file://$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-search-api/changgou-service-search-api.iml" filepath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-search-api/changgou-service-search-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-seckill/changgou-service-seckill.iml" filepath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-seckill/changgou-service-seckill.iml" />
+      <module fileurl="file://$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-seckill-api/changgou-service-seckill-api.iml" filepath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-seckill-api/changgou-service-seckill-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-user/changgou-service-user.iml" filepath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-user/changgou-service-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-user-api/changgou-service-user-api.iml" filepath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou-service-user-api/changgou-service-user-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/changgou_parent/changgou-user-oauth/changgou-user-oauth.iml" filepath="$PROJECT_DIR$/changgou_parent/changgou-user-oauth/changgou-user-oauth.iml" />
@@ -31,7 +32,6 @@
       <module fileurl="file://$PROJECT_DIR$/changgou_parent/changgou_service/changgou_service_file/changgou_service_file.iml" filepath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou_service_file/changgou_service_file.iml" />
       <module fileurl="file://$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou_service_goods_api/changgou_service_goods_api.iml" filepath="$PROJECT_DIR$/changgou_parent/changgou_service_api/changgou_service_goods_api/changgou_service_goods_api.iml" />
       <module fileurl="file://$PROJECT_DIR$/changgou_parent/changgou_web/changgou_web.iml" filepath="$PROJECT_DIR$/changgou_parent/changgou_web/changgou_web.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../code-template/code-template.iml" filepath="$PROJECT_DIR$/../code-template/code-template.iml" />
       <module fileurl="file://$PROJECT_DIR$/../SpringCloudDemo/consumer-demo/consumer-demo.iml" filepath="$PROJECT_DIR$/../SpringCloudDemo/consumer-demo/consumer-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/../SpringCloudDemo/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/../SpringCloudDemo/eureka-server/eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/../SpringCloudDemo/gateway/gateway.iml" filepath="$PROJECT_DIR$/../SpringCloudDemo/gateway/gateway.iml" />

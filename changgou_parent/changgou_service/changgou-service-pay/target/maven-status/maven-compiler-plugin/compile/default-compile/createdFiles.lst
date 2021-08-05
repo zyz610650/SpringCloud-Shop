@@ -1,4 +1,5 @@
 com\changgou\service\WeixinPayService.class
 com\changgou\config\config.class
+com\changgou\controller\WeixinPayController.class
 com\changgou\service\impl\WeixinPayServiceImpl.class
 com\changgou\WeixinPayApplication.class

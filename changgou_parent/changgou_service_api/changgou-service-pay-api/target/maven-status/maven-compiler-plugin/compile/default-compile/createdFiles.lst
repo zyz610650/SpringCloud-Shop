@@ -1,0 +1,2 @@
+com\changgou\pay\pojo\Pay.class
+com\changgou\pay\feign\PayFeign.class

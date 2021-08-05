@@ -11,6 +11,12 @@
 
     <artifactId>changgou-service-seckill</artifactId>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>com.changgou</groupId>
+            <artifactId>changgou-service-seckill-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>
