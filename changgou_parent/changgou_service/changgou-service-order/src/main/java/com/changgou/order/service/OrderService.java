@@ -66,5 +66,5 @@ public interface OrderService {
      */
     List<Order> findAll();
 
-    void add(Map<String,Object> map);
+    Map<String, String> add(Map<String,Object> map);
 }

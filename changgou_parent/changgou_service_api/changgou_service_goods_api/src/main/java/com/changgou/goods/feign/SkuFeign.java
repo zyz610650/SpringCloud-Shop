@@ -46,6 +46,13 @@ public interface SkuFeign {
     @PostMapping("/search")
     Result<List<Sku>> findList(@RequestBody(required = false) Sku sku);
 
-
+    /**
+     * 更新库存
+     * @param skuId
+     * @param num
+     * @return
+     */
+    @GetMapping("/update/{id}/{num}")
+    public Result updateStock(@PathVariable("id") Integer skuId, @PathVariable Integer num);
 
 }

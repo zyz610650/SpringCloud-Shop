@@ -18,6 +18,8 @@
         <module>changgou-service-user</module>
         <module>changgou-service-order</module>
         <module>changgou-service-seckill</module>
+        <module>changgou-service-pay</module>
+
     </modules>
     <artifactId>changgou_service</artifactId>
     <dependencies>

@@ -8,6 +8,10 @@ spring:
     url: jdbc:mysql://192.168.137.166:3306/changgou_order?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=GMT%2B8
     username: root
     password: 123456
+  rabbitmq:
+    host: 192.168.137.166
+    username: guest
+    password: guest
   redis:
     host: 192.168.137.166
     port: 6379
@@ -28,3 +32,8 @@ feign:
           thread:
             timeoutInMilliseconds: 10000
           strategy: SEMAPHORE
+#位置支付交换机和队列
+mq:
+  pay:
+    queue:
+      order: queue.order
