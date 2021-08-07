@@ -18,6 +18,7 @@ import org.springframework.amqp.core.Message;
 import org.springframework.amqp.core.MessagePostProcessor;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
@@ -55,6 +56,11 @@ public class OrderServiceImpl implements OrderService {
     private UserFeign userFeign;
     @Autowired
     private PayFeign payFeign;
+
+    @Value("${mq.pay.exchange}")
+    private String exchange;
+    @Value("${mq.pay.quque.order}")
+    private String queue;
 
     @Override
     public Map<String, String> add(Map<String, Object> map) {
@@ -114,8 +120,7 @@ public class OrderServiceImpl implements OrderService {
          redisTemplate.boundHashOps("Cart_"+username).delete(list);
 
         //创建支付二维码
-
-        Result<Map<String,String>> result = payFeign.createNative(order.getPayMoney(), order.getId());
+        Result<Map<String,String>> result = payFeign.createNative(order.getPayMoney(), order.getId(),exchange,queue);
         //将订单加入延迟队列
         sendMessage(order.getId());
 

@@ -38,3 +38,11 @@ hystrix:
           thread:
             timeoutInMilliseconds: 10000
           strategy: SEMAPHORE
+mq:
+  seckillPay:
+    exchange:
+      order: exchange.seckill
+    queue:
+      order: queue.seckill
+    routing:
+      key: queue.seckill

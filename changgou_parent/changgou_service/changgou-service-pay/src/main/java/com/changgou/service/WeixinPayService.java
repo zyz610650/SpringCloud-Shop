@@ -11,7 +11,7 @@ import java.util.Map;
  * @idea:
  */
 public interface WeixinPayService {
-    public Map<String,String> CreateNative(Integer total, String out_trade_no, String desc);
+    public Map<String,String> CreateNative(Integer total, String out_trade_no, String desc,String exchange,String routingKey);
     public Map<String,String> queryStatus(String out_trade_no);
     public boolean deleteOrder(String out_trade_no);
 }

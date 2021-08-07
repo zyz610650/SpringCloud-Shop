@@ -37,3 +37,4 @@ mq:
   pay:
     queue:
       order: queue.order
+    exchange: queue.order

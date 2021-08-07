@@ -63,20 +63,33 @@ public class WeixinPayServiceImpl implements WeixinPayService {
      * @throws Exception
      */
     @Override
-    public Map<String,String> CreateNative(Integer total, String out_trade_no, String desc)  {
+    public Map<String,String> CreateNative(Integer total, String out_trade_no, String desc,String exchange,String routingKey)  {
         //"https://api.mch.weixin.qq.com/v3/pay/transactions/native"
         HttpPost httpPost = new HttpPost(vxUrl);
         SimpleDateFormat simpleDateFormat=new SimpleDateFormat("YYYY-MM-DDTHH:mm:ss+TIMEZONE");
-        Pay pay=new Pay();
-        pay.setAppid(appid);
-        pay.setMchid(mchid);
-        pay.setNotify_url(notifyurl);
-        pay.setOut_trade_no(out_trade_no);
-        pay.setDescription(desc);
-        pay.setAmount(new Amount(total,"CNY"));
-
+//        Pay pay=new Pay();
+//        pay.setAppid(appid);
+//        pay.setMchid(mchid);
+//        pay.setNotify_url(notifyurl);
+//        pay.setOut_trade_no(out_trade_no);
+//        pay.setDescription(desc);
+//        pay.setAmount(new Amount(total,"CNY"));
+        Map amount=new HashMap<>();
+        amount.put("currency","CNY");
+        amount.put("total",total);
+        Map<String,Object> param=new HashMap<>();
+        param.put("appid",appid);
+        param.put("notifyurl",notifyurl);
+        param.put("mchid",mchid);
+        param.put("out_trade_no",out_trade_no);
+        param.put("amount",JSON.toJSON(amount));
+        param.put("appid",appid);
+        Map<String,String> queue=new HashMap<>();
+        param.put("exchange",exchange);
+        param.put("routingKey",routingKey);
+        param.put("attach",JSON.toJSON(queue));
         // 请求body参数
-        String reqdata = JSON.toJSONString(pay);
+        String reqdata = JSON.toJSONString(param);
         System.out.println("发送的信息: "+reqdata);
         StringEntity entity;
         CloseableHttpResponse response = null;

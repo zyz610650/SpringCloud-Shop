@@ -20,7 +20,7 @@ public interface PayFeign {
     public boolean deleteOrder(String out_trade_no);
 
     @RequestMapping("/create/native")
-    public Result<Map<String,String>> createNative(Integer money, String desc);
+    public Result<Map<String,String>> createNative(Integer money, String desc,String exchange,String routingKey);
 
     @RequestMapping("/query")
     public Result queryStatus(String out_trade_no);

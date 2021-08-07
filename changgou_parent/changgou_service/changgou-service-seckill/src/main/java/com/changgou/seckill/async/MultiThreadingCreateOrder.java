@@ -30,23 +30,36 @@ public class MultiThreadingCreateOrder {
     @Autowired
     private SeckillGoodsMapper seckillGoodsMapper;
 
+    void clearCache(String username)
+    {
+        //删除排队用户信息
+        redisTemplate.boundHashOps("UserQueueCount").delete(username);
+        //删除商品排队
+        //删除排队用户信息
+        redisTemplate.boundHashOps("UserQueueStatus").delete(username);
+    }
     @Async
     public void CreateOrder()
     {
+
         SeckillStatus seckillStatus = (SeckillStatus) redisTemplate.boundListOps("SeckillOrderQueue").rightPop();
+
         String time=seckillStatus.getTime();
         String username=seckillStatus.getUsername();
         Long secKillId=seckillStatus.getGoodsId();
+
         try {
+
             SeckillGoods seckillGoods= (SeckillGoods) redisTemplate.boundHashOps("SeckillGoods_"+time).get(secKillId);
-            //检查库存
-            if (seckillGoods==null||seckillGoods.getStockCount()<=0)
+            Long stockCount=(long)redisTemplate.boundHashOps("SeckillGoodsCount").increment(secKillId,-1);
+            if (seckillGoods==null||stockCount<0)
             {
+                clearCache(username);
                 throw new RuntimeException("已售罄");
             }
             //更新库存
             seckillGoods.setStockCount(seckillGoods.getStockCount()-1);
-            if (seckillGoods.getStockCount()<=0)
+            if (stockCount<=0)
             {
                 //更新缓存
                 redisTemplate.boundHashOps("SeckillGoods_"+time).delete(secKillId);

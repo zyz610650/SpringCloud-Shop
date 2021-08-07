@@ -1,5 +1,6 @@
 package com.changgou.seckill.service.impl;
 import com.changgou.entity.IdWorker;
+import com.changgou.entity.StatusCode;
 import com.changgou.seckill.async.MultiThreadingCreateOrder;
 import com.changgou.seckill.dao.SeckillGoodsMapper;
 import com.changgou.seckill.dao.SeckillOrderMapper;
@@ -52,6 +53,12 @@ public class SeckillOrderServiceImpl implements SeckillOrderService {
      */
     @Override
     public boolean add(String username, String time,long secKillId) {
+        //解决用户重复排队
+        long count=redisTemplate.boundHashOps("UserQueueCount").increment(username,1);
+        if(count>1)
+        {
+            throw new RuntimeException(String.valueOf(StatusCode.REPERROR));
+        }
 
         SeckillStatus seckillStatus=new SeckillStatus(username,new Date(),1,secKillId,time);
         redisTemplate.boundListOps("SeckillOrderQueue").leftPush(seckillStatus);

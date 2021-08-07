@@ -54,10 +54,10 @@ public class WeixinPayController {
      * @return
      */
     @RequestMapping("/create/native")
-    public Result createNative(Integer money,String desc)
+    public Result createNative(Integer money,String desc,String exchange,String routingKey)
     {
      String id=String.valueOf(idWorker.nextId());
-     Map<String,String>  resultMap=weixinPayService.CreateNative(money,id,desc);
+     Map<String,String>  resultMap=weixinPayService.CreateNative(money,id,desc,exchange,routingKey);
      return new Result(true, StatusCode.OK,"支付链接创建成功!",resultMap);
     }
 
@@ -77,8 +77,7 @@ public class WeixinPayController {
         //应答微信服务器
         Map respMap = new HashMap();
         //签名认证
-      //  String Authorization=request.getHeader("Authorization");
-
+        //  String Authorization=request.getHeader("Authorization");
         InputStream inputStream;
         try {
             inputStream=request.getInputStream();
@@ -96,8 +95,9 @@ public class WeixinPayController {
             //获取加密数据
             Map<String,String> resource= (Map<String, String>) map.get("resource");
             String dataResult=resource.get("ciphertext");
+            Map<String,String> param=  JSON.parseObject(resource.get("attach"),Map.class);
             //将消息发送给RabbitMQ
-            rabbitTemplate.convertAndSend(exchange,routing,JSON.toJSONString(dataResult));
+            rabbitTemplate.convertAndSend(param.get("exchange"),param.get("routing"),JSON.toJSONString(dataResult));
             
             //解密判断是否有问题
             respMap.put("code","SUCCESS");

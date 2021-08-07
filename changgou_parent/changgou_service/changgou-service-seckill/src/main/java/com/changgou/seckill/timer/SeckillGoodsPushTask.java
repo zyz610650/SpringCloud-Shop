@@ -51,8 +51,10 @@ public class SeckillGoodsPushTask {
             {
                 redisTemplate.boundHashOps("SeckillGoods_"+nameSpace).put(seckillGoods1.getId(),seckillGoods1);
                 redisTemplate.expireAt("SeckillGoods_"+nameSpace,endTime);
+                redisTemplate.boundHashOps("SeckillGoodsCount").increment(seckillGoods1.getId(),1);
                 System.out.println(seckillGoods1.toString());
             }
+
 
         }
 
