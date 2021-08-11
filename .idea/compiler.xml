@@ -21,11 +21,16 @@
         <module name="changgou-service-canal" />
         <module name="changgou-service-pay" />
         <module name="changgou-service-content-api" />
+        <module name="fescar-api" />
+        <module name="storage-server" />
         <module name="changgou-gateway-web" />
         <module name="changgou-service-order-api" />
         <module name="changgou-service-search-api" />
         <module name="changgou-web-search" />
         <module name="changgou-service-order" />
+        <module name="order-server" />
+        <module name="springcloud-eureka-feign-mybatis-seata" />
+        <module name="account-server" />
         <module name="changgou-service-goods" />
         <module name="changgou_common" />
         <module name="changgou_service_file" />
@@ -38,6 +43,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="account-server" target="1.8" />
       <module name="changgou-gateway-web" target="1.8" />
       <module name="changgou-service-canal" target="1.8" />
       <module name="changgou-service-content" target="1.8" />
@@ -70,13 +76,21 @@
       <module name="code-template" target="1.8" />
       <module name="consumer-demo" target="1.8" />
       <module name="eureka-server" target="1.8" />
+      <module name="fescar-api" target="1.8" />
+      <module name="fescar-parent" target="1.8" />
       <module name="gateway" target="1.8" />
+      <module name="order-server" target="1.8" />
+      <module name="seata" target="1.5" />
+      <module name="seate-api" target="1.5" />
+      <module name="springcloud-eureka-feign-mybatis-seata" target="1.8" />
       <module name="SpringCloudDemo" target="1.8" />
+      <module name="storage-server" target="1.8" />
       <module name="user-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="account-server" options="-parameters" />
       <module name="changgou-gateway-web" options="-parameters" />
       <module name="changgou-service-canal" options="-parameters" />
       <module name="changgou-service-content" options="-parameters" />
@@ -108,7 +122,11 @@
       <module name="changgou_web" options="-parameters" />
       <module name="consumer-demo" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
+      <module name="fescar-api" options="-parameters" />
       <module name="gateway" options="-parameters" />
+      <module name="order-server" options="-parameters" />
+      <module name="springcloud-eureka-feign-mybatis-seata" options="-parameters" />
+      <module name="storage-server" options="-parameters" />
       <module name="user-service" options="-parameters" />
     </option>
   </component>

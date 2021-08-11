@@ -12,7 +12,15 @@
         <option value="$PROJECT_DIR$/../SpringCloudDemo/pom.xml" />
         <option value="$USER_HOME$/Desktop/百度云/2.畅购商城/资料/代码生成器/code-template-master/pom.xml" />
         <option value="$PROJECT_DIR$/changgou_parent/changgou-user-oauth/pom.xml" />
+        <option value="$PROJECT_DIR$/../seata/pom.xml" />
+        <option value="$PROJECT_DIR$/../fescar-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/../seata/springcloud-eureka-feign-mybatis-seata/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../seata/seate-api/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">

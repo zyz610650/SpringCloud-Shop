@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../SpringCloudDemo/SpringCloudDemo.iml" filepath="$PROJECT_DIR$/../SpringCloudDemo/SpringCloudDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../seata/springcloud-eureka-feign-mybatis-seata/account-server/account-server.iml" filepath="$PROJECT_DIR$/../seata/springcloud-eureka-feign-mybatis-seata/account-server/account-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/changgou_parent/changgou_gateway/changgou-gateway-web/changgou-gateway-web.iml" filepath="$PROJECT_DIR$/changgou_parent/changgou_gateway/changgou-gateway-web/changgou-gateway-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-canal/changgou-service-canal.iml" filepath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-canal/changgou-service-canal.iml" />
       <module fileurl="file://$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-content/changgou-service-content.iml" filepath="$PROJECT_DIR$/changgou_parent/changgou_service/changgou-service-content/changgou-service-content.iml" />
@@ -34,8 +35,14 @@
       <module fileurl="file://$PROJECT_DIR$/changgou_parent/changgou_web/changgou_web.iml" filepath="$PROJECT_DIR$/changgou_parent/changgou_web/changgou_web.iml" />
       <module fileurl="file://$PROJECT_DIR$/../SpringCloudDemo/consumer-demo/consumer-demo.iml" filepath="$PROJECT_DIR$/../SpringCloudDemo/consumer-demo/consumer-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/../SpringCloudDemo/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/../SpringCloudDemo/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../fescar-parent/fescar-api/fescar-api.iml" filepath="$PROJECT_DIR$/../fescar-parent/fescar-api/fescar-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../fescar-parent/fescar-parent.iml" filepath="$PROJECT_DIR$/../fescar-parent/fescar-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/../SpringCloudDemo/gateway/gateway.iml" filepath="$PROJECT_DIR$/../SpringCloudDemo/gateway/gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../seata/springcloud-eureka-feign-mybatis-seata/order-server/order-server.iml" filepath="$PROJECT_DIR$/../seata/springcloud-eureka-feign-mybatis-seata/order-server/order-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../seata/seata.iml" filepath="$PROJECT_DIR$/../seata/seata.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/springCloud_Shop.iml" filepath="$PROJECT_DIR$/.idea/springCloud_Shop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../seata/springcloud-eureka-feign-mybatis-seata/springcloud-eureka-feign-mybatis-seata.iml" filepath="$PROJECT_DIR$/../seata/springcloud-eureka-feign-mybatis-seata/springcloud-eureka-feign-mybatis-seata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../seata/springcloud-eureka-feign-mybatis-seata/storage-server/storage-server.iml" filepath="$PROJECT_DIR$/../seata/springcloud-eureka-feign-mybatis-seata/storage-server/storage-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/../test.iml" filepath="$PROJECT_DIR$/../test.iml" />
       <module fileurl="file://$PROJECT_DIR$/../test1/test1.iml" filepath="$PROJECT_DIR$/../test1/test1.iml" />
       <module fileurl="file://$PROJECT_DIR$/../SpringCloudDemo/user-service/user-service.iml" filepath="$PROJECT_DIR$/../SpringCloudDemo/user-service/user-service.iml" />
